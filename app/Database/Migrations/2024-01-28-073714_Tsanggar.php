@@ -4,41 +4,41 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class Tpeserta extends Migration
+class Tsanggar extends Migration
 {
     public function up()
     {
         $this->forge->addField([
-            'Id_peserta' => [
+            'Id_Sanggar' => [
                 'type' => 'INT',
-                'constraint' => 5,
                 'unsigned' => true,
                 'auto_increment' => true,
             ],
-            'NoInduk' => [
+            'Email_Sanggar' => [
                 'type' => 'VARCHAR',
                 'constraint' => '100',
             ],
-            'Nama' => [
+            'Nama_Sanggar' => [
                 'type' => 'VARCHAR',
                 'constraint' => '100',
             ],
-            'Status' => [
+            'Desc_Sanggar' => [
+                'type' => 'Text',
+
+            ],
+            'Alamat_Sanggar' => [
+                'type' => 'TEXT',
+            ],
+            'Nohp_Sanggar' => [
                 'type' => 'VARCHAR',
                 'constraint' => '100',
             ],
-            'No_HP' => [
-                'type' => 'VARCHAR',
-                'constraint' => '100',
-                'null' => true,
-            ],
-            'Foto' => [
+            'Foto_Sanggar' => [
                 'type' => 'VARCHAR',
                 'constraint' => '100',
             ],
-            'Ket' => [
+            'Id_Userkey' => [
                 'type' => 'INT',
-                'constraint' => '5',
             ],
             'dibuat' => [
                 'type' => 'date',
@@ -53,13 +53,13 @@ class Tpeserta extends Migration
                 'null' => true,
             ],
         ]);
-        $this->forge->addKey('Id_peserta', true);
-        $this->forge->createTable('tpeserta');
+        $this->forge->addKey('Id_Sanggar', true);
+        $this->forge->createTable('tsanggar');
 
     }
 
     public function down()
     {
-        $this->forge->dropTable('tpeserta');
+        $this->forge->dropTable('tsanggar');
     }
 }
