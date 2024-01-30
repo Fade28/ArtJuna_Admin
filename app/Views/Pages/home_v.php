@@ -4,10 +4,6 @@
 <div class="w-full px-6 py-6 mx-auto">
     <!-- row 1 -->
     <div class="flex flex-wrap -mx-3">
-        <?php
-        $faker = Faker\Factory::create();
-        echo "+(62) 8" . $faker->company();
-        ?>
         <!-- card1 -->
         <div class="w-full max-w-full px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4">
             <div class="relative flex flex-col min-w-0 break-words bg-white shadow-soft-xl rounded-2xl bg-clip-border">

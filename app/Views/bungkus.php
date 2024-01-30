@@ -18,8 +18,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="<?= base_url(); ?>assets/img/logo_unitama.png" />
-    <title>PKKM 2023 |
+    <link rel="icon" type="image/png" href="<?= base_url(); ?>assets/img/favicon.png" />
+    <title>ArtJuna |
         <?= $aktif ?>
     </title>
     <!--     Fonts and icons     -->
@@ -35,9 +35,6 @@
     <script src="https://kit.fontawesome.com/85148bfb14.js" crossorigin="anonymous"></script>
     <!-- Main Styling -->
     <link href="<?= base_url() ?>/assets/css/soft-ui-dashboard-tailwind.css?v=1.0.5" rel="stylesheet" />
-    <!-- Nepcha Analytics (nepcha.com) -->
-    <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
-    <!-- <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script> -->
     <style>
 
     </style>

@@ -11,7 +11,7 @@ $routes = Services::routes();
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('AuthController');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -31,7 +31,7 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 
 //pages
-$routes->get('/', 'Home::index');
+$routes->get('/', 'AuthController::index');
 $routes->get('/Peserta', 'Home::Peserta');
 $routes->get('/tampes', 'Home::tambahPeserta');
 $routes->post('/simpes', 'Home::simpanPeserta');
@@ -42,6 +42,11 @@ $routes->post('/happes', 'Home::hapusPeserta');
 $routes->post('/upfoto', 'Home::uploadFoto');
 $routes->get('/setpesan/(:alpha)/(:segment)', 'Home::setPesan/$1/$2');
 
+//Auth
+$routes->get('/masuk', 'AuthController::index');
+$routes->post('/login', 'AuthController::verSanggar');
+$routes->get('/daftar', 'AuthController::daftar');
+$routes->post('/tamsanggar', 'AuthController::tambahSanggar');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

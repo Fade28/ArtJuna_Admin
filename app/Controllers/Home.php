@@ -45,8 +45,8 @@ class Home extends BaseController
 
     public function __construct()
     {
-        $this->Tpeserta = new TPeserta();
-        $this->jPes = $this->Tpeserta->where('dihapus', null)->countAllResults();
+        // $this->Tpeserta = new TPeserta();
+        // $this->jPes = $this->Tpeserta->where('dihapus', null)->countAllResults();
     }
 
     public function index()
