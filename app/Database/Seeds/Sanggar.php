@@ -8,8 +8,20 @@ class Sanggar extends Seeder
 {
     public function run()
     {
+        $this->db->table('tsanggar')->insert([
+            'Email_Sanggar' => "Admin@admin.com",
+            'Nama_Sanggar' => "Admin",
+            'Id_Userkey' => 1,
+            'dibuat' => date('Y-m-d'),
+            'diubah' => date('Y-m-d'),
+            'dihapus' => null,
+        ]);
+        $this->db->table('tuserkey')->insert([
+            'Pass' => password_hash("Admin", true),
+            'Status' => 1,
+        ]);
         $faker = \Faker\Factory::create();
-        for ($i = 5; $i <= 7; $i++) {
+        for ($i = 2; $i <= 4; $i++) {
             $data = [
                 'Email_Sanggar' => $faker->email,
                 'Nama_Sanggar' => $faker->company(),

@@ -8,20 +8,8 @@ class User extends Seeder
 {
     public function run()
     {
-        $this->db->table('tuser')->insert([
-            'Email' => "Admin@admin.com",
-            'Nama_Lengkap' => "Admin",
-            'Id_Userkey' => 1,
-            'dibuat' => date('Y-m-d'),
-            'diubah' => date('Y-m-d'),
-            'dihapus' => null,
-        ]);
-        $this->db->table('tuserkey')->insert([
-            'Pass' => password_hash("Admin", true),
-            'Status' => 1,
-        ]);
         $faker = \Faker\Factory::create();
-        for ($i = 2; $i <= 4; $i++) {
+        for ($i = 5; $i <= 7; $i++) {
             $data = [
                 'Email' => $faker->email,
                 'Nama_Lengkap' => $faker->userName,
