@@ -39,7 +39,6 @@ class AuthController extends BaseController
     ];
     public function __construct()
     {
-        $this->session = session();
         $this->TSanggar = new TSanggar();
         $this->TUserKey = new TUserkey();
         // $this->jPes = $this->Tpeserta->where('dihapus', null)->countAllResults();
@@ -68,7 +67,7 @@ class AuthController extends BaseController
                     'logged_in' => TRUE
                 ];
                 $this->session->set($ses_data);
-                return redirect()->to('/dashboard');
+                return redirect()->to('/');
             } else {
                 return redirect()->route('masuk')->with('gagal', 'Password yang anda masukkan Salah !');
             }

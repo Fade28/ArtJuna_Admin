@@ -31,7 +31,7 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 
 //pages
-$routes->get('/', 'AuthController::index');
+$routes->get('/', 'home::index');
 $routes->get('/Peserta', 'Home::Peserta');
 $routes->get('/tampes', 'Home::tambahPeserta');
 $routes->post('/simpes', 'Home::simpanPeserta');

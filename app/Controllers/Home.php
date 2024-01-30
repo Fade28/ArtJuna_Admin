@@ -3,13 +3,13 @@
 namespace App\Controllers;
 
 use CodeIgniter\Files\File;
-use App\Models\TPeserta;
+use App\Models\TSanggar;
 
 
 class Home extends BaseController
 {
     protected $helpers = ['form', 'url'];
-    public $rulePeserta = [
+    public $ruleSanggar = [
         'nama' => [
             'rules' => 'required',
             'errors' => ['required' => 'Nama Harus Diisi']
@@ -45,18 +45,23 @@ class Home extends BaseController
 
     public function __construct()
     {
+
         // $this->Tpeserta = new TPeserta();
         // $this->jPes = $this->Tpeserta->where('dihapus', null)->countAllResults();
     }
 
     public function index()
     {
-        $data = [
-            'aktif' => 'home',
-            'judul' => 'PKKM - 2023',
-            'jPes' => $this->jPes,
-        ];
-        return view('pages/home_v', $data);
+        if (!$this->session->get('logged_in')) {
+            return redirect()->route('masuk');
+        }
+        echo "dashbord";
+        // $data = [
+        //     'aktif' => 'home',
+        //     'judul' => 'PKKM - 2023',
+        //     'jPes' => $this->jPes,
+        // ];
+        // return view('pages/home_v', $data);
     }
     public function Peserta()
     {
