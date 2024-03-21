@@ -76,7 +76,7 @@
                 ?>
             </div>
             <div class="mb-2" x-data="{ show: true }">
-                <span class="mb-2 ml-1 font-bold text-xs text-slate-700">Password</span>
+                <span class="mb-2 ml-1 font-bold text-xs text-slate-700">Confirm Password</span>
                 <div class="relative">
                     <input placeholder="Konfirm Password" name="co-pass" :type="show ? 'password' : 'text'"
                         class="focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:outline-none focus:transition-shadow">

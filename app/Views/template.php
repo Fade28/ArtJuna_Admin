@@ -18,26 +18,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="<?= base_url(); ?>/assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="<?= base_url(); ?>/assets/img/favicon.png" />
     <title>Soft UI Dashboard Tailwind</title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <!-- Nucleo Icons -->
-    <link href="<?= base_url() ?>/assets/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="<?= base_url() ?>/assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="<?= base_url(); ?>/assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="<?= base_url(); ?>/assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- Popper -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <!-- Main Styling -->
-    <link href="<?= base_url() ?>/assets/css/soft-ui-dashboard-tailwind.css?v=1.0.5" rel="stylesheet" />
-    <!-- Nepcha Analytics (nepcha.com) -->
-    <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
-    <!-- <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script> -->
-</head>
+    <link href="<?= base_url(); ?>/assets/css/soft-ui-dashboard-tailwind.css?v=1.0.5" rel="stylesheet" />
 
-<body class="m-0 font-sans text-base antialiased font-normal leading-default bg-gray-50 text-slate-500">
+  </head>
+
+<body class="m-0 font-sans antialiased font-normal text-base leading-default bg-gray-50 text-slate-500">
     <!-- sidenav  -->
     <aside
         class="max-w-62.5 ease-nav-brand z-990 fixed inset-y-0 my-4 ml-4 block w-full -translate-x-full flex-wrap items-center justify-between overflow-y-auto rounded-2xl border-0 bg-white p-0 antialiased shadow-none transition-transform duration-200 xl:left-0 xl:translate-x-0 xl:bg-transparent">
@@ -45,7 +43,7 @@
             <i class="absolute top-0 right-0 hidden p-4 opacity-50 cursor-pointer fas fa-times text-slate-400 xl:hidden"
                 sidenav-close></i>
             <a class="block px-8 py-6 m-0 text-sm whitespace-nowrap text-slate-700" href="javascript:;" target="_blank">
-                <img src="./assets/img/logo-ct.png"
+                <img src="../assets/img/logo-ct.png"
                     class="inline h-full max-w-full transition-all duration-200 ease-nav-brand max-h-8"
                     alt="main_logo" />
                 <span class="ml-1 font-semibold transition-all duration-200 ease-nav-brand">Soft UI Dashboard</span>
@@ -58,7 +56,7 @@
             <ul class="flex flex-col pl-0 mb-0">
                 <li class="mt-0.5 w-full">
                     <a class="py-2.7 shadow-soft-xl text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-colors"
-                        href="./pages/dashboard.html">
+                        href="../pages/dashboard.html">
                         <div
                             class="bg-gradient-to-tl from-purple-700 to-pink-500 shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                             <svg width="12px" height="12px" viewBox="0 0 45 40" version="1.1"
@@ -87,7 +85,7 @@
 
                 <li class="mt-0.5 w-full">
                     <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-                        href="./pages/tables.html">
+                        href="../pages/tables.html">
                         <div
                             class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                             <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1"
@@ -116,7 +114,7 @@
 
                 <li class="mt-0.5 w-full">
                     <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-                        href="./pages/billing.html">
+                        href="../pages/billing.html">
                         <div
                             class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center fill-current stroke-0 text-center xl:p-2.5">
                             <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1"
@@ -145,7 +143,7 @@
 
                 <li class="mt-0.5 w-full">
                     <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-                        href="./pages/virtual-reality.html">
+                        href="../pages/virtual-reality.html">
                         <div
                             class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                             <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1"
@@ -177,7 +175,7 @@
 
                 <li class="mt-0.5 w-full">
                     <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-                        href="./pages/rtl.html">
+                        href="../pages/rtl.html">
                         <div
                             class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                             <svg width="12px" height="12px" viewBox="0 0 40 40" version="1.1"
@@ -208,12 +206,12 @@
                 </li>
 
                 <li class="w-full mt-4">
-                    <h6 class="pl-6 ml-2 text-xs font-bold leading-tight uppercase opacity-60">Account pages</h6>
+                    <h6 class="pl-6 ml-2 font-bold leading-tight uppercase text-xs opacity-60">Account pages</h6>
                 </li>
 
                 <li class="mt-0.5 w-full">
                     <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-                        href="./pages/profile.html">
+                        href="../pages/profile.html">
                         <div
                             class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                             <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1"
@@ -245,7 +243,7 @@
 
                 <li class="mt-0.5 w-full">
                     <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-                        href="./pages/sign-in.html">
+                        href="../pages/sign-in.html">
                         <div
                             class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                             <svg width="12px" height="12px" viewBox="0 0 40 44" version="1.1"
@@ -274,7 +272,7 @@
 
                 <li class="mt-0.5 w-full">
                     <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-                        href="./pages/sign-up.html">
+                        href="../pages/sign-up.html">
                         <div
                             class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                             <svg width="12px" height="20px" viewBox="0 0 40 40" version="1.1"
@@ -312,29 +310,29 @@
         <div class="mx-4">
             <!-- load phantom colors for card after: -->
             <p
-                class="invisible hidden text-gray-800 text-red-500 text-red-600 after:bg-gradient-to-tl after:from-gray-900 after:to-slate-800 after:from-blue-600 after:to-cyan-400 after:from-red-500 after:to-yellow-400 after:from-green-600 after:to-lime-400 after:from-red-600 after:to-rose-400 after:from-slate-600 after:to-slate-300 text-lime-500 text-cyan-500 text-slate-400 text-fuchsia-500">
+                class="invisible hidden text-gray-800 text-red-500 text-red-600 after:bg-gradient-to-tl after:from-gray-900 after:to-slate-800 after:bg-gradient-to-tl after:from-blue-600 after:to-cyan-400 after:bg-gradient-to-tl after:from-red-500 after:to-yellow-400 after:bg-gradient-to-tl after:from-green-600 after:to-lime-400 after:bg-gradient-to-tl after:from-red-600 after:to-rose-400 after:bg-gradient-to-tl after:from-slate-600 after:to-slate-300 text-lime-500 text-cyan-500 text-slate-400 text-fuchsia-500">
             </p>
             <div class="after:opacity-65 after:bg-gradient-to-tl after:from-slate-600 after:to-slate-300 relative flex min-w-0 flex-col items-center break-words rounded-2xl border-0 border-solid border-blue-900 bg-white bg-clip-border shadow-none after:absolute after:top-0 after:bottom-0 after:left-0 after:z-10 after:block after:h-full after:w-full after:rounded-2xl after:content-['']"
                 sidenav-card>
                 <div class="mb-7.5 absolute h-full w-full rounded-2xl bg-cover bg-center"
-                    style="background-image: url('./assets/img/curved-images/white-curved.jpeg')"></div>
+                    style="background-image: url('../assets/img/curved-images/white-curved.jpeg')"></div>
                 <div class="relative z-20 flex-auto w-full p-4 text-left text-white">
                     <div
                         class="flex items-center justify-center w-8 h-8 mb-4 text-center bg-white bg-center rounded-lg icon shadow-soft-2xl">
-                        <i class="top-0 z-10 text-lg leading-none text-transparent ni ni-diamond bg-gradient-to-tl from-slate-600 to-slate-300 bg-clip-text opacity-80"
+                        <i class="top-0 z-10 text-transparent ni leading-none ni-diamond text-lg bg-gradient-to-tl from-slate-600 to-slate-300 bg-clip-text opacity-80"
                             sidenav-card-icon></i>
                     </div>
                     <div class="transition-all duration-200 ease-nav-brand">
                         <h6 class="mb-0 text-white">Need help?</h6>
-                        <p class="mt-0 mb-4 text-xs font-semibold leading-tight">Please check our docs</p>
+                        <p class="mt-0 mb-4 font-semibold leading-tight text-xs">Please check our docs</p>
                         <a href="https://www.creative-tim.com/learning-lab/tailwind/html/quick-start/soft-ui-dashboard/"
                             target="_blank"
-                            class="inline-block w-full px-8 py-2 mb-0 text-xs font-bold text-center text-black uppercase transition-all ease-in bg-white border-0 border-white rounded-lg shadow-soft-md bg-150 leading-pro hover:shadow-soft-2xl hover:scale-102">Documentation</a>
+                            class="inline-block w-full px-8 py-2 mb-0 font-bold text-center text-black uppercase transition-all ease-in bg-white border-0 border-white rounded-lg shadow-soft-md bg-150 leading-pro text-xs hover:shadow-soft-2xl hover:scale-102">Documentation</a>
                     </div>
                 </div>
             </div>
             <!-- pro btn  -->
-            <a class="inline-block w-full px-6 py-3 my-4 text-xs font-bold text-center text-white uppercase align-middle transition-all ease-in border-0 rounded-lg select-none shadow-soft-md bg-150 bg-x-25 leading-pro bg-gradient-to-tl from-purple-700 to-pink-500 hover:shadow-soft-2xl hover:scale-102"
+            <a class="inline-block w-full px-6 py-3 my-4 font-bold text-center text-white uppercase align-middle transition-all ease-in border-0 rounded-lg select-none shadow-soft-md bg-150 bg-x-25 leading-pro text-xs bg-gradient-to-tl from-purple-700 to-pink-500 hover:shadow-soft-2xl hover:scale-102"
                 target="_blank"
                 href="https://www.creative-tim.com/product/soft-ui-dashboard-pro-tailwind?ref=sidebarfree">Upgrade to
                 pro</a>
@@ -351,7 +349,7 @@
                 <nav>
                     <!-- breadcrumb -->
                     <ol class="flex flex-wrap pt-1 mr-12 bg-transparent rounded-lg sm:mr-16">
-                        <li class="text-sm leading-normal">
+                        <li class="leading-normal text-sm">
                             <a class="opacity-50 text-slate-700" href="javascript:;">Pages</a>
                         </li>
                         <li class="text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/']"
@@ -375,18 +373,18 @@
                     <ul class="flex flex-row justify-end pl-0 mb-0 list-none md-max:w-full">
                         <!-- online builder btn  -->
                         <!-- <li class="flex items-center">
-                <a class="inline-block px-8 py-2 mb-0 mr-4 text-xs font-bold text-center uppercase align-middle transition-all bg-transparent border border-solid rounded-lg shadow-none cursor-pointer leading-pro border-fuchsia-500 ease-soft-in hover:scale-102 active:shadow-soft-xs text-fuchsia-500 hover:border-fuchsia-500 active:bg-fuchsia-500 active:hover:text-fuchsia-500 hover:text-fuchsia-500 tracking-tight-soft hover:bg-transparent hover:opacity-75 hover:shadow-none active:text-white active:hover:bg-transparent" target="_blank" href="https://www.creative-tim.com/builder/soft-ui?ref=navbar-dashboard&amp;_ga=2.76518741.1192788655.1647724933-1242940210.1644448053">Online Builder</a>
+                <a class="inline-block px-8 py-2 mb-0 mr-4 font-bold text-center uppercase align-middle transition-all bg-transparent border border-solid rounded-lg shadow-none cursor-pointer leading-pro border-fuchsia-500 ease-soft-in text-xs hover:scale-102 active:shadow-soft-xs text-fuchsia-500 hover:border-fuchsia-500 active:bg-fuchsia-500 active:hover:text-fuchsia-500 hover:text-fuchsia-500 tracking-tight-soft hover:bg-transparent hover:opacity-75 hover:shadow-none active:text-white active:hover:bg-transparent" target="_blank" href="https://www.creative-tim.com/builder/soft-ui?ref=navbar-dashboard&amp;_ga=2.76518741.1192788655.1647724933-1242940210.1644448053">Online Builder</a>
               </li> -->
                         <li class="flex items-center">
-                            <a href="./pages/sign-in.html"
-                                class="block px-0 py-2 text-sm font-semibold transition-all ease-nav-brand text-slate-500">
+                            <a href="../pages/sign-in.html"
+                                class="block px-0 py-2 font-semibold transition-all ease-nav-brand text-sm text-slate-500">
                                 <i class="fa fa-user sm:mr-1"></i>
                                 <span class="hidden sm:inline">Sign In</span>
                             </a>
                         </li>
                         <li class="flex items-center pl-4 xl:hidden">
                             <a href="javascript:;"
-                                class="block p-0 text-sm transition-all ease-nav-brand text-slate-500" sidenav-trigger>
+                                class="block p-0 transition-all ease-nav-brand text-sm text-slate-500" sidenav-trigger>
                                 <div class="w-4.5 overflow-hidden">
                                     <i
                                         class="ease-soft mb-0.75 relative block h-0.5 rounded-sm bg-slate-500 transition-all"></i>
@@ -398,7 +396,7 @@
                             </a>
                         </li>
                         <li class="flex items-center px-4">
-                            <a href="javascript:;" class="p-0 text-sm transition-all ease-nav-brand text-slate-500">
+                            <a href="javascript:;" class="p-0 transition-all text-sm ease-nav-brand text-slate-500">
                                 <i fixed-plugin-button-nav class="cursor-pointer fa fa-cog"></i>
                                 <!-- fixed-plugin-button-nav  -->
                             </a>
@@ -409,7 +407,7 @@
                         <li class="relative flex items-center pr-2">
                             <p class="hidden transform-dropdown-show"></p>
                             <a href="javascript:;"
-                                class="block p-0 text-sm transition-all ease-nav-brand text-slate-500" dropdown-trigger
+                                class="block p-0 transition-all text-sm ease-nav-brand text-slate-500" dropdown-trigger
                                 aria-expanded="false">
                                 <i class="cursor-pointer fa fa-bell"></i>
                             </a>
@@ -422,13 +420,13 @@
                                         href="javascript:;">
                                         <div class="flex py-1">
                                             <div class="my-auto">
-                                                <img src="./assets/img/team-2.jpg"
-                                                    class="inline-flex items-center justify-center mr-4 text-sm text-white h-9 w-9 max-w-none rounded-xl" />
+                                                <img src="../assets/img/team-2.jpg"
+                                                    class="inline-flex items-center justify-center mr-4 text-white text-sm h-9 w-9 max-w-none rounded-xl" />
                                             </div>
                                             <div class="flex flex-col justify-center">
-                                                <h6 class="mb-1 text-sm font-normal leading-normal"><span
+                                                <h6 class="mb-1 font-normal leading-normal text-sm"><span
                                                         class="font-semibold">New message</span> from Laur</h6>
-                                                <p class="mb-0 text-xs leading-tight text-slate-400">
+                                                <p class="mb-0 leading-tight text-xs text-slate-400">
                                                     <i class="mr-1 fa fa-clock"></i>
                                                     13 minutes ago
                                                 </p>
@@ -442,13 +440,13 @@
                                         href="javascript:;">
                                         <div class="flex py-1">
                                             <div class="my-auto">
-                                                <img src="./assets/img/small-logos/logo-spotify.svg"
-                                                    class="inline-flex items-center justify-center mr-4 text-sm text-white bg-gradient-to-tl from-gray-900 to-slate-800 h-9 w-9 max-w-none rounded-xl" />
+                                                <img src="../assets/img/small-logos/logo-spotify.svg"
+                                                    class="inline-flex items-center justify-center mr-4 text-white text-sm bg-gradient-to-tl from-gray-900 to-slate-800 h-9 w-9 max-w-none rounded-xl" />
                                             </div>
                                             <div class="flex flex-col justify-center">
-                                                <h6 class="mb-1 text-sm font-normal leading-normal"><span
+                                                <h6 class="mb-1 font-normal leading-normal text-sm"><span
                                                         class="font-semibold">New album</span> by Travis Scott</h6>
-                                                <p class="mb-0 text-xs leading-tight text-slate-400">
+                                                <p class="mb-0 leading-tight text-xs text-slate-400">
                                                     <i class="mr-1 fa fa-clock"></i>
                                                     1 day
                                                 </p>
@@ -462,7 +460,7 @@
                                         href="javascript:;">
                                         <div class="flex py-1">
                                             <div
-                                                class="inline-flex items-center justify-center my-auto mr-4 text-sm text-white transition-all duration-200 ease-nav-brand bg-gradient-to-tl from-slate-600 to-slate-300 h-9 w-9 rounded-xl">
+                                                class="inline-flex items-center justify-center my-auto mr-4 text-white transition-all duration-200 ease-nav-brand text-sm bg-gradient-to-tl from-slate-600 to-slate-300 h-9 w-9 rounded-xl">
                                                 <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -485,9 +483,9 @@
                                                 </svg>
                                             </div>
                                             <div class="flex flex-col justify-center">
-                                                <h6 class="mb-1 text-sm font-normal leading-normal">Payment successfully
+                                                <h6 class="mb-1 font-normal leading-normal text-sm">Payment successfully
                                                     completed</h6>
-                                                <p class="mb-0 text-xs leading-tight text-slate-400">
+                                                <p class="mb-0 leading-tight text-xs text-slate-400">
                                                     <i class="mr-1 fa fa-clock"></i>
                                                     2 days
                                                 </p>
@@ -516,11 +514,11 @@
                             <div class="flex flex-row -mx-3">
                                 <div class="flex-none w-2/3 max-w-full px-3">
                                     <div>
-                                        <p class="mb-0 font-sans text-sm font-semibold leading-normal">Today's Money</p>
+                                        <p class="mb-0 font-sans font-semibold leading-normal text-sm">Today's Money</p>
                                         <h5 class="mb-0 font-bold">
                                             $53,000
                                             <span
-                                                class="text-sm leading-normal font-weight-bolder text-lime-500">+55%</span>
+                                                class="leading-normal text-sm font-weight-bolder text-lime-500">+55%</span>
                                         </h5>
                                     </div>
                                 </div>
@@ -544,11 +542,11 @@
                             <div class="flex flex-row -mx-3">
                                 <div class="flex-none w-2/3 max-w-full px-3">
                                     <div>
-                                        <p class="mb-0 font-sans text-sm font-semibold leading-normal">Today's Users</p>
+                                        <p class="mb-0 font-sans font-semibold leading-normal text-sm">Today's Users</p>
                                         <h5 class="mb-0 font-bold">
                                             2,300
                                             <span
-                                                class="text-sm leading-normal font-weight-bolder text-lime-500">+3%</span>
+                                                class="leading-normal text-sm font-weight-bolder text-lime-500">+3%</span>
                                         </h5>
                                     </div>
                                 </div>
@@ -571,11 +569,11 @@
                             <div class="flex flex-row -mx-3">
                                 <div class="flex-none w-2/3 max-w-full px-3">
                                     <div>
-                                        <p class="mb-0 font-sans text-sm font-semibold leading-normal">New Clients</p>
+                                        <p class="mb-0 font-sans font-semibold leading-normal text-sm">New Clients</p>
                                         <h5 class="mb-0 font-bold">
                                             +3,462
                                             <span
-                                                class="text-sm leading-normal text-red-600 font-weight-bolder">-2%</span>
+                                                class="leading-normal text-red-600 text-sm font-weight-bolder">-2%</span>
                                         </h5>
                                     </div>
                                 </div>
@@ -599,11 +597,11 @@
                             <div class="flex flex-row -mx-3">
                                 <div class="flex-none w-2/3 max-w-full px-3">
                                     <div>
-                                        <p class="mb-0 font-sans text-sm font-semibold leading-normal">Sales</p>
+                                        <p class="mb-0 font-sans font-semibold leading-normal text-sm">Sales</p>
                                         <h5 class="mb-0 font-bold">
                                             $103,430
                                             <span
-                                                class="text-sm leading-normal font-weight-bolder text-lime-500">+5%</span>
+                                                class="leading-normal text-sm font-weight-bolder text-lime-500">+5%</span>
                                         </h5>
                                     </div>
                                 </div>
@@ -632,7 +630,7 @@
                                         <h5 class="font-bold">Soft UI Dashboard</h5>
                                         <p class="mb-12">From colors, cards, typography to complex elements, you will
                                             find the full documentation.</p>
-                                        <a class="mt-auto mb-0 text-sm font-semibold leading-normal group text-slate-500"
+                                        <a class="mt-auto mb-0 font-semibold leading-normal text-sm group text-slate-500"
                                             href="javascript:;">
                                             Read More
                                             <i
@@ -642,11 +640,11 @@
                                 </div>
                                 <div class="max-w-full px-3 mt-12 ml-auto text-center lg:mt-0 lg:w-5/12 lg:flex-none">
                                     <div class="h-full bg-gradient-to-tl from-purple-700 to-pink-500 rounded-xl">
-                                        <img src="./assets/img/shapes/waves-white.svg"
+                                        <img src="../assets/img/shapes/waves-white.svg"
                                             class="absolute top-0 hidden w-1/2 h-full lg:block" alt="waves" />
                                         <div class="relative flex items-center justify-center h-full">
                                             <img class="relative z-20 w-full pt-6"
-                                                src="./assets/img/illustrations/rocket-white.png" alt="rocket" />
+                                                src="../assets/img/illustrations/rocket-white.png" alt="rocket" />
                                         </div>
                                     </div>
                                 </div>
@@ -658,14 +656,14 @@
                     <div
                         class="border-black/12.5 shadow-soft-xl relative flex h-full min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border p-4">
                         <div class="relative h-full overflow-hidden bg-cover rounded-xl"
-                            style="background-image: url('./assets/img/ivancik.jpg')">
+                            style="background-image: url('../assets/img/ivancik.jpg')">
                             <span
                                 class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-gradient-to-tl from-gray-900 to-slate-800 opacity-80"></span>
                             <div class="relative z-10 flex flex-col flex-auto h-full p-4">
                                 <h5 class="pt-2 mb-6 font-bold text-white">Work with the rockets</h5>
                                 <p class="text-white">Wealth creation is an evolutionarily recent positive-sum game. It
                                     is all about who take the opportunity first.</p>
-                                <a class="mt-auto mb-0 text-sm font-semibold leading-normal text-white group"
+                                <a class="mt-auto mb-0 font-semibold leading-normal text-white group text-sm"
                                     href="javascript:;">
                                     Read More
                                     <i
@@ -690,7 +688,7 @@
                                 </div>
                             </div>
                             <h6 class="mt-6 mb-0 ml-2">Active Users</h6>
-                            <p class="ml-2 text-sm leading-normal">(<span class="font-bold">+23%</span>) than last week
+                            <p class="ml-2 leading-normal text-sm">(<span class="font-bold">+23%</span>) than last week
                             </p>
                             <div class="w-full px-6 mx-auto max-w-screen-2xl rounded-xl">
                                 <div class="flex flex-wrap mt-0 -mx-3">
@@ -719,7 +717,7 @@
                                                     </g>
                                                 </svg>
                                             </div>
-                                            <p class="mt-1 mb-0 text-xs font-semibold leading-tight">Users</p>
+                                            <p class="mt-1 mb-0 font-semibold leading-tight text-xs">Users</p>
                                         </div>
                                         <h4 class="font-bold">36K</h4>
                                         <div class="text-xs h-0.75 flex w-3/4 overflow-visible rounded-lg bg-gray-200">
@@ -759,7 +757,7 @@
                                                     </g>
                                                 </svg>
                                             </div>
-                                            <p class="mt-1 mb-0 text-xs font-semibold leading-tight">Clicks</p>
+                                            <p class="mt-1 mb-0 font-semibold leading-tight text-xs">Clicks</p>
                                         </div>
                                         <h4 class="font-bold">2m</h4>
                                         <div class="text-xs h-0.75 flex w-3/4 overflow-visible rounded-lg bg-gray-200">
@@ -793,7 +791,7 @@
                                                     </g>
                                                 </svg>
                                             </div>
-                                            <p class="mt-1 mb-0 text-xs font-semibold leading-tight">Sales</p>
+                                            <p class="mt-1 mb-0 font-semibold leading-tight text-xs">Sales</p>
                                         </div>
                                         <h4 class="font-bold">435$</h4>
                                         <div class="text-xs h-0.75 flex w-3/4 overflow-visible rounded-lg bg-gray-200">
@@ -831,7 +829,7 @@
                                                     </g>
                                                 </svg>
                                             </div>
-                                            <p class="mt-1 mb-0 text-xs font-semibold leading-tight">Items</p>
+                                            <p class="mt-1 mb-0 font-semibold leading-tight text-xs">Items</p>
                                         </div>
                                         <h4 class="font-bold">43</h4>
                                         <div class="text-xs h-0.75 flex w-3/4 overflow-visible rounded-lg bg-gray-200">
@@ -850,7 +848,7 @@
                         class="border-black/12.5 shadow-soft-xl relative z-20 flex min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border">
                         <div class="border-black/12.5 mb-0 rounded-t-2xl border-b-0 border-solid bg-white p-6 pb-0">
                             <h6>Sales overview</h6>
-                            <p class="text-sm leading-normal">
+                            <p class="leading-normal text-sm">
                                 <i class="fa fa-arrow-up text-lime-500"></i>
                                 <span class="font-semibold">4% more</span> in 2021
                             </p>
@@ -876,7 +874,7 @@
                             <div class="flex flex-wrap mt-0 -mx-3">
                                 <div class="flex-none w-7/12 max-w-full px-3 mt-0 lg:w-1/2 lg:flex-none">
                                     <h6>Projects</h6>
-                                    <p class="mb-0 text-sm leading-normal">
+                                    <p class="mb-0 leading-normal text-sm">
                                         <i class="fa fa-check text-cyan-500"></i>
                                         <span class="ml-1 font-semibold">30 done</span>
                                         this month
@@ -932,64 +930,64 @@
                                             <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
                                                 <div class="flex px-2 py-1">
                                                     <div>
-                                                        <img src="./assets/img/small-logos/logo-xd.svg"
-                                                            class="inline-flex items-center justify-center mr-4 text-sm text-white transition-all duration-200 ease-soft-in-out h-9 w-9 rounded-xl"
+                                                        <img src="../assets/img/small-logos/logo-xd.svg"
+                                                            class="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 ease-soft-in-out text-sm h-9 w-9 rounded-xl"
                                                             alt="xd" />
                                                     </div>
                                                     <div class="flex flex-col justify-center">
-                                                        <h6 class="mb-0 text-sm leading-normal">Soft UI XD Version</h6>
+                                                        <h6 class="mb-0 leading-normal text-sm">Soft UI XD Version</h6>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
                                                 <div class="mt-2 avatar-group">
                                                     <a href="javascript:;"
-                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out text-xs hover:z-30"
                                                         data-target="tooltip_trigger" data-placement="bottom">
-                                                        <img src="./assets/img/team-1.jpg" class="w-full rounded-full"
+                                                        <img src="../assets/img/team-1.jpg" class="w-full rounded-full"
                                                             alt="team1" />
                                                     </a>
                                                     <div data-target="tooltip"
-                                                        class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
+                                                        class="hidden px-2 py-1 text-white bg-black rounded-lg text-sm"
                                                         role="tooltip">
                                                         Ryan Tompson
                                                         <div class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
                                                             data-popper-arrow></div>
                                                     </div>
                                                     <a href="javascript:;"
-                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out text-xs hover:z-30"
                                                         data-target="tooltip_trigger" data-placement="bottom">
-                                                        <img src="./assets/img/team-2.jpg" class="w-full rounded-full"
+                                                        <img src="../assets/img/team-2.jpg" class="w-full rounded-full"
                                                             alt="team2" />
                                                     </a>
                                                     <div data-target="tooltip"
-                                                        class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
+                                                        class="hidden px-2 py-1 text-white bg-black rounded-lg text-sm"
                                                         role="tooltip">
                                                         Romina Hadid
                                                         <div class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
                                                             data-popper-arrow></div>
                                                     </div>
                                                     <a href="javascript:;"
-                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out text-xs hover:z-30"
                                                         data-target="tooltip_trigger" data-placement="bottom">
-                                                        <img src="./assets/img/team-3.jpg" class="w-full rounded-full"
+                                                        <img src="../assets/img/team-3.jpg" class="w-full rounded-full"
                                                             alt="team3" />
                                                     </a>
                                                     <div data-target="tooltip"
-                                                        class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
+                                                        class="hidden px-2 py-1 text-white bg-black rounded-lg text-sm"
                                                         role="tooltip">
                                                         Alexander Smith
                                                         <div class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
                                                             data-popper-arrow></div>
                                                     </div>
                                                     <a href="javascript:;"
-                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out text-xs hover:z-30"
                                                         data-target="tooltip_trigger" data-placement="bottom">
-                                                        <img src="./assets/img/team-4.jpg" class="w-full rounded-full"
+                                                        <img src="../assets/img/team-4.jpg" class="w-full rounded-full"
                                                             alt="team4" />
                                                     </a>
                                                     <div data-target="tooltip"
-                                                        class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
+                                                        class="hidden px-2 py-1 text-white bg-black rounded-lg text-sm"
                                                         role="tooltip">
                                                         Jessica Doe
                                                         <div class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
@@ -998,14 +996,14 @@
                                                 </div>
                                             </td>
                                             <td
-                                                class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b whitespace-nowrap">
-                                                <span class="text-xs font-semibold leading-tight"> $14,000 </span>
+                                                class="p-2 leading-normal text-center align-middle bg-transparent border-b text-sm whitespace-nowrap">
+                                                <span class="font-semibold leading-tight text-xs"> $14,000 </span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
                                                 <div class="w-3/4 mx-auto">
                                                     <div>
                                                         <div>
-                                                            <span class="text-xs font-semibold leading-tight">60%</span>
+                                                            <span class="font-semibold leading-tight text-xs">60%</span>
                                                         </div>
                                                     </div>
                                                     <div
@@ -1021,38 +1019,38 @@
                                             <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
                                                 <div class="flex px-2 py-1">
                                                     <div>
-                                                        <img src="./assets/img/small-logos/logo-atlassian.svg"
-                                                            class="inline-flex items-center justify-center mr-4 text-sm text-white transition-all duration-200 ease-soft-in-out h-9 w-9 rounded-xl"
+                                                        <img src="../assets/img/small-logos/logo-atlassian.svg"
+                                                            class="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 ease-soft-in-out text-sm h-9 w-9 rounded-xl"
                                                             alt="atlassian" />
                                                     </div>
                                                     <div class="flex flex-col justify-center">
-                                                        <h6 class="mb-0 text-sm leading-normal">Add Progress Track</h6>
+                                                        <h6 class="mb-0 leading-normal text-sm">Add Progress Track</h6>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
                                                 <div class="mt-2 avatar-group">
                                                     <a href="javascript:;"
-                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out text-xs hover:z-30"
                                                         data-target="tooltip_trigger" data-placement="bottom">
-                                                        <img src="./assets/img/team-2.jpg" class="w-full rounded-full"
+                                                        <img src="../assets/img/team-2.jpg" class="w-full rounded-full"
                                                             alt="team5" />
                                                     </a>
                                                     <div data-target="tooltip"
-                                                        class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
+                                                        class="hidden px-2 py-1 text-white bg-black rounded-lg text-sm"
                                                         role="tooltip">
                                                         Romina Hadid
                                                         <div class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
                                                             data-popper-arrow></div>
                                                     </div>
                                                     <a href="javascript:;"
-                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out text-xs hover:z-30"
                                                         data-target="tooltip_trigger" data-placement="bottom">
-                                                        <img src="./assets/img/team-4.jpg" class="w-full rounded-full"
+                                                        <img src="../assets/img/team-4.jpg" class="w-full rounded-full"
                                                             alt="team6" />
                                                     </a>
                                                     <div data-target="tooltip"
-                                                        class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
+                                                        class="hidden px-2 py-1 text-white bg-black rounded-lg text-sm"
                                                         role="tooltip">
                                                         Jessica Doe
                                                         <div class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
@@ -1061,14 +1059,14 @@
                                                 </div>
                                             </td>
                                             <td
-                                                class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b whitespace-nowrap">
-                                                <span class="text-xs font-semibold leading-tight"> $3,000 </span>
+                                                class="p-2 leading-normal text-center align-middle bg-transparent border-b text-sm whitespace-nowrap">
+                                                <span class="font-semibold leading-tight text-xs"> $3,000 </span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
                                                 <div class="w-3/4 mx-auto">
                                                     <div>
                                                         <div>
-                                                            <span class="text-xs font-semibold leading-tight">10%</span>
+                                                            <span class="font-semibold leading-tight text-xs">10%</span>
                                                         </div>
                                                     </div>
                                                     <div
@@ -1084,38 +1082,38 @@
                                             <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
                                                 <div class="flex px-2 py-1">
                                                     <div>
-                                                        <img src="./assets/img/small-logos/logo-slack.svg"
-                                                            class="inline-flex items-center justify-center mr-4 text-sm text-white transition-all duration-200 ease-soft-in-out h-9 w-9 rounded-xl"
+                                                        <img src="../assets/img/small-logos/logo-slack.svg"
+                                                            class="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 ease-soft-in-out text-sm h-9 w-9 rounded-xl"
                                                             alt="team7" />
                                                     </div>
                                                     <div class="flex flex-col justify-center">
-                                                        <h6 class="mb-0 text-sm leading-normal">Fix Platform Errors</h6>
+                                                        <h6 class="mb-0 leading-normal text-sm">Fix Platform Errors</h6>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
                                                 <div class="mt-2 avatar-group">
                                                     <a href="javascript:;"
-                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out text-xs hover:z-30"
                                                         data-target="tooltip_trigger" data-placement="bottom">
-                                                        <img src="./assets/img/team-3.jpg" class="w-full rounded-full"
+                                                        <img src="../assets/img/team-3.jpg" class="w-full rounded-full"
                                                             alt="team8" />
                                                     </a>
                                                     <div data-target="tooltip"
-                                                        class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
+                                                        class="hidden px-2 py-1 text-white bg-black rounded-lg text-sm"
                                                         role="tooltip">
                                                         Romina Hadid
                                                         <div class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
                                                             data-popper-arrow></div>
                                                     </div>
                                                     <a href="javascript:;"
-                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out text-xs hover:z-30"
                                                         data-target="tooltip_trigger" data-placement="bottom">
-                                                        <img src="./assets/img/team-1.jpg" class="w-full rounded-full"
+                                                        <img src="../assets/img/team-1.jpg" class="w-full rounded-full"
                                                             alt="team9" />
                                                     </a>
                                                     <div data-target="tooltip"
-                                                        class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
+                                                        class="hidden px-2 py-1 text-white bg-black rounded-lg text-sm"
                                                         role="tooltip">
                                                         Jessica Doe
                                                         <div class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
@@ -1124,15 +1122,15 @@
                                                 </div>
                                             </td>
                                             <td
-                                                class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b whitespace-nowrap">
-                                                <span class="text-xs font-semibold leading-tight"> Not set </span>
+                                                class="p-2 leading-normal text-center align-middle bg-transparent border-b text-sm whitespace-nowrap">
+                                                <span class="font-semibold leading-tight text-xs"> Not set </span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
                                                 <div class="w-3/4 mx-auto">
                                                     <div>
                                                         <div>
                                                             <span
-                                                                class="text-xs font-semibold leading-tight">100%</span>
+                                                                class="font-semibold leading-tight text-xs">100%</span>
                                                         </div>
                                                     </div>
                                                     <div
@@ -1148,12 +1146,12 @@
                                             <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
                                                 <div class="flex px-2 py-1">
                                                     <div>
-                                                        <img src="./assets/img/small-logos/logo-spotify.svg"
-                                                            class="inline-flex items-center justify-center mr-4 text-sm text-white transition-all duration-200 ease-soft-in-out h-9 w-9 rounded-xl"
+                                                        <img src="../assets/img/small-logos/logo-spotify.svg"
+                                                            class="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 ease-soft-in-out text-sm h-9 w-9 rounded-xl"
                                                             alt="spotify" />
                                                     </div>
                                                     <div class="flex flex-col justify-center">
-                                                        <h6 class="mb-0 text-sm leading-normal">Launch our Mobile App
+                                                        <h6 class="mb-0 leading-normal text-sm">Launch our Mobile App
                                                         </h6>
                                                     </div>
                                                 </div>
@@ -1161,52 +1159,52 @@
                                             <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
                                                 <div class="mt-2 avatar-group">
                                                     <a href="javascript:;"
-                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out text-xs hover:z-30"
                                                         data-target="tooltip_trigger" data-placement="bottom">
-                                                        <img src="./assets/img/team-4.jpg" class="w-full rounded-full"
+                                                        <img src="../assets/img/team-4.jpg" class="w-full rounded-full"
                                                             alt="user1" />
                                                     </a>
                                                     <div data-target="tooltip"
-                                                        class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
+                                                        class="hidden px-2 py-1 text-white bg-black rounded-lg text-sm"
                                                         role="tooltip">
                                                         Ryan Tompson
                                                         <div class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
                                                             data-popper-arrow></div>
                                                     </div>
                                                     <a href="javascript:;"
-                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out text-xs hover:z-30"
                                                         data-target="tooltip_trigger" data-placement="bottom">
-                                                        <img src="./assets/img/team-3.jpg" class="w-full rounded-full"
+                                                        <img src="../assets/img/team-3.jpg" class="w-full rounded-full"
                                                             alt="user2" />
                                                     </a>
                                                     <div data-target="tooltip"
-                                                        class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
+                                                        class="hidden px-2 py-1 text-white bg-black rounded-lg text-sm"
                                                         role="tooltip">
                                                         Romina Hadid
                                                         <div class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
                                                             data-popper-arrow></div>
                                                     </div>
                                                     <a href="javascript:;"
-                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out text-xs hover:z-30"
                                                         data-target="tooltip_trigger" data-placement="bottom">
-                                                        <img src="./assets/img/team-4.jpg" class="w-full rounded-full"
+                                                        <img src="../assets/img/team-4.jpg" class="w-full rounded-full"
                                                             alt="user3" />
                                                     </a>
                                                     <div data-target="tooltip"
-                                                        class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
+                                                        class="hidden px-2 py-1 text-white bg-black rounded-lg text-sm"
                                                         role="tooltip">
                                                         Alexander Smith
                                                         <div class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
                                                             data-popper-arrow></div>
                                                     </div>
                                                     <a href="javascript:;"
-                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out text-xs hover:z-30"
                                                         data-target="tooltip_trigger" data-placement="bottom">
-                                                        <img src="./assets/img/team-1.jpg" class="w-full rounded-full"
+                                                        <img src="../assets/img/team-1.jpg" class="w-full rounded-full"
                                                             alt="user4" />
                                                     </a>
                                                     <div data-target="tooltip"
-                                                        class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
+                                                        class="hidden px-2 py-1 text-white bg-black rounded-lg text-sm"
                                                         role="tooltip">
                                                         Jessica Doe
                                                         <div class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
@@ -1215,15 +1213,15 @@
                                                 </div>
                                             </td>
                                             <td
-                                                class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b whitespace-nowrap">
-                                                <span class="text-xs font-semibold leading-tight"> $20,500 </span>
+                                                class="p-2 leading-normal text-center align-middle bg-transparent border-b text-sm whitespace-nowrap">
+                                                <span class="font-semibold leading-tight text-xs"> $20,500 </span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
                                                 <div class="w-3/4 mx-auto">
                                                     <div>
                                                         <div>
                                                             <span
-                                                                class="text-xs font-semibold leading-tight">100%</span>
+                                                                class="font-semibold leading-tight text-xs">100%</span>
                                                         </div>
                                                     </div>
                                                     <div
@@ -1239,12 +1237,12 @@
                                             <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
                                                 <div class="flex px-2 py-1">
                                                     <div>
-                                                        <img src="./assets/img/small-logos/logo-jira.svg"
-                                                            class="inline-flex items-center justify-center mr-4 text-sm text-white transition-all duration-200 ease-soft-in-out h-9 w-9 rounded-xl"
+                                                        <img src="../assets/img/small-logos/logo-jira.svg"
+                                                            class="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 ease-soft-in-out text-sm h-9 w-9 rounded-xl"
                                                             alt="jira" />
                                                     </div>
                                                     <div class="flex flex-col justify-center">
-                                                        <h6 class="mb-0 text-sm leading-normal">Add the New Pricing Page
+                                                        <h6 class="mb-0 leading-normal text-sm">Add the New Pricing Page
                                                         </h6>
                                                     </div>
                                                 </div>
@@ -1252,13 +1250,13 @@
                                             <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
                                                 <div class="mt-2 avatar-group">
                                                     <a href="javascript:;"
-                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out text-xs hover:z-30"
                                                         data-target="tooltip_trigger" data-placement="bottom">
-                                                        <img src="./assets/img/team-4.jpg" class="w-full rounded-full"
+                                                        <img src="../assets/img/team-4.jpg" class="w-full rounded-full"
                                                             alt="user5" />
                                                     </a>
                                                     <div data-target="tooltip"
-                                                        class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
+                                                        class="hidden px-2 py-1 text-white bg-black rounded-lg text-sm"
                                                         role="tooltip">
                                                         Ryan Tompson
                                                         <div class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
@@ -1267,14 +1265,14 @@
                                                 </div>
                                             </td>
                                             <td
-                                                class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b whitespace-nowrap">
-                                                <span class="text-xs font-semibold leading-tight"> $500 </span>
+                                                class="p-2 leading-normal text-center align-middle bg-transparent border-b text-sm whitespace-nowrap">
+                                                <span class="font-semibold leading-tight text-xs"> $500 </span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
                                                 <div class="w-3/4 mx-auto">
                                                     <div>
                                                         <div>
-                                                            <span class="text-xs font-semibold leading-tight">25%</span>
+                                                            <span class="font-semibold leading-tight text-xs">25%</span>
                                                         </div>
                                                     </div>
                                                     <div
@@ -1290,12 +1288,12 @@
                                             <td class="p-2 align-middle bg-transparent border-0 whitespace-nowrap">
                                                 <div class="flex px-2 py-1">
                                                     <div>
-                                                        <img src="./assets/img/small-logos/logo-invision.svg"
-                                                            class="inline-flex items-center justify-center mr-4 text-sm text-white transition-all duration-200 ease-soft-in-out h-9 w-9 rounded-xl"
+                                                        <img src="../assets/img/small-logos/logo-invision.svg"
+                                                            class="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 ease-soft-in-out text-sm h-9 w-9 rounded-xl"
                                                             alt="invision" />
                                                     </div>
                                                     <div class="flex flex-col justify-center">
-                                                        <h6 class="mb-0 text-sm leading-normal">Redesign New Online Shop
+                                                        <h6 class="mb-0 leading-normal text-sm">Redesign New Online Shop
                                                         </h6>
                                                     </div>
                                                 </div>
@@ -1303,26 +1301,26 @@
                                             <td class="p-2 align-middle bg-transparent border-0 whitespace-nowrap">
                                                 <div class="mt-2 avatar-group">
                                                     <a href="javascript:;"
-                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out text-xs hover:z-30"
                                                         data-target="tooltip_trigger" data-placement="bottom">
-                                                        <img src="./assets/img/team-1.jpg" class="w-full rounded-full"
+                                                        <img src="../assets/img/team-1.jpg" class="w-full rounded-full"
                                                             alt="user6" />
                                                     </a>
                                                     <div data-target="tooltip"
-                                                        class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
+                                                        class="hidden px-2 py-1 text-white bg-black rounded-lg text-sm"
                                                         role="tooltip">
                                                         Ryan Tompson
                                                         <div class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
                                                             data-popper-arrow></div>
                                                     </div>
                                                     <a href="javascript:;"
-                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+                                                        class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out text-xs hover:z-30"
                                                         data-target="tooltip_trigger" data-placement="bottom">
-                                                        <img src="./assets/img/team-4.jpg" class="w-full rounded-full"
+                                                        <img src="../assets/img/team-4.jpg" class="w-full rounded-full"
                                                             alt="user7" />
                                                     </a>
                                                     <div data-target="tooltip"
-                                                        class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
+                                                        class="hidden px-2 py-1 text-white bg-black rounded-lg text-sm"
                                                         role="tooltip">
                                                         Jessica Doe
                                                         <div class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
@@ -1331,14 +1329,14 @@
                                                 </div>
                                             </td>
                                             <td
-                                                class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-0 whitespace-nowrap">
-                                                <span class="text-xs font-semibold leading-tight"> $2,000 </span>
+                                                class="p-2 leading-normal text-center align-middle bg-transparent border-0 text-sm whitespace-nowrap">
+                                                <span class="font-semibold leading-tight text-xs"> $2,000 </span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-0 whitespace-nowrap">
                                                 <div class="w-3/4 mx-auto">
                                                     <div>
                                                         <div>
-                                                            <span class="text-xs font-semibold leading-tight">40%</span>
+                                                            <span class="font-semibold leading-tight text-xs">40%</span>
                                                         </div>
                                                     </div>
                                                     <div
@@ -1364,7 +1362,7 @@
                         class="border-black/12.5 shadow-soft-xl relative flex h-full min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border">
                         <div class="border-black/12.5 mb-0 rounded-t-2xl border-b-0 border-solid bg-white p-6 pb-0">
                             <h6>Orders overview</h6>
-                            <p class="text-sm leading-normal">
+                            <p class="leading-normal text-sm">
                                 <i class="fa fa-arrow-up text-lime-500"></i>
                                 <span class="font-semibold">24%</span> this month
                             </p>
@@ -1376,12 +1374,12 @@
                                     <span
                                         class="w-6.5 h-6.5 text-base absolute left-4 z-10 inline-flex -translate-x-1/2 items-center justify-center rounded-full bg-white text-center font-semibold">
                                         <i
-                                            class="relative z-10 leading-none text-transparent ni ni-bell-55 leading-pro bg-gradient-to-tl from-green-600 to-lime-400 bg-clip-text fill-transparent"></i>
+                                            class="relative z-10 text-transparent ni leading-none ni-bell-55 leading-pro bg-gradient-to-tl from-green-600 to-lime-400 bg-clip-text fill-transparent"></i>
                                     </span>
                                     <div class="ml-11.252 pt-1.4 lg:max-w-120 relative -top-1.5 w-auto">
-                                        <h6 class="mb-0 text-sm font-semibold leading-normal text-slate-700">$2400,
+                                        <h6 class="mb-0 font-semibold leading-normal text-sm text-slate-700">$2400,
                                             Design changes</h6>
-                                        <p class="mt-1 mb-0 text-xs font-semibold leading-tight text-slate-400">22 DEC
+                                        <p class="mt-1 mb-0 font-semibold leading-tight text-xs text-slate-400">22 DEC
                                             7:20 PM</p>
                                     </div>
                                 </div>
@@ -1389,12 +1387,12 @@
                                     <span
                                         class="w-6.5 h-6.5 text-base absolute left-4 z-10 inline-flex -translate-x-1/2 items-center justify-center rounded-full bg-white text-center font-semibold">
                                         <i
-                                            class="relative z-10 leading-none text-transparent ni ni-html5 leading-pro bg-gradient-to-tl from-red-600 to-rose-400 bg-clip-text fill-transparent"></i>
+                                            class="relative z-10 text-transparent ni leading-none ni-html5 leading-pro bg-gradient-to-tl from-red-600 to-rose-400 bg-clip-text fill-transparent"></i>
                                     </span>
                                     <div class="ml-11.252 pt-1.4 lg:max-w-120 relative -top-1.5 w-auto">
-                                        <h6 class="mb-0 text-sm font-semibold leading-normal text-slate-700">New order
+                                        <h6 class="mb-0 font-semibold leading-normal text-sm text-slate-700">New order
                                             #1832412</h6>
-                                        <p class="mt-1 mb-0 text-xs font-semibold leading-tight text-slate-400">21 DEC
+                                        <p class="mt-1 mb-0 font-semibold leading-tight text-xs text-slate-400">21 DEC
                                             11 PM</p>
                                     </div>
                                 </div>
@@ -1402,12 +1400,12 @@
                                     <span
                                         class="w-6.5 h-6.5 text-base absolute left-4 z-10 inline-flex -translate-x-1/2 items-center justify-center rounded-full bg-white text-center font-semibold">
                                         <i
-                                            class="relative z-10 leading-none text-transparent ni ni-cart leading-pro bg-gradient-to-tl from-blue-600 to-cyan-400 bg-clip-text fill-transparent"></i>
+                                            class="relative z-10 text-transparent ni leading-none ni-cart leading-pro bg-gradient-to-tl from-blue-600 to-cyan-400 bg-clip-text fill-transparent"></i>
                                     </span>
                                     <div class="ml-11.252 pt-1.4 lg:max-w-120 relative -top-1.5 w-auto">
-                                        <h6 class="mb-0 text-sm font-semibold leading-normal text-slate-700">Server
+                                        <h6 class="mb-0 font-semibold leading-normal text-sm text-slate-700">Server
                                             payments for April</h6>
-                                        <p class="mt-1 mb-0 text-xs font-semibold leading-tight text-slate-400">21 DEC
+                                        <p class="mt-1 mb-0 font-semibold leading-tight text-xs text-slate-400">21 DEC
                                             9:34 PM</p>
                                     </div>
                                 </div>
@@ -1415,12 +1413,12 @@
                                     <span
                                         class="w-6.5 h-6.5 text-base absolute left-4 z-10 inline-flex -translate-x-1/2 items-center justify-center rounded-full bg-white text-center font-semibold">
                                         <i
-                                            class="relative z-10 leading-none text-transparent ni ni-credit-card leading-pro bg-gradient-to-tl from-red-500 to-yellow-400 bg-clip-text fill-transparent"></i>
+                                            class="relative z-10 text-transparent ni leading-none ni-credit-card leading-pro bg-gradient-to-tl from-red-500 to-yellow-400 bg-clip-text fill-transparent"></i>
                                     </span>
                                     <div class="ml-11.252 pt-1.4 lg:max-w-120 relative -top-1.5 w-auto">
-                                        <h6 class="mb-0 text-sm font-semibold leading-normal text-slate-700">New card
+                                        <h6 class="mb-0 font-semibold leading-normal text-sm text-slate-700">New card
                                             added for order #4395133</h6>
-                                        <p class="mt-1 mb-0 text-xs font-semibold leading-tight text-slate-400">20 DEC
+                                        <p class="mt-1 mb-0 font-semibold leading-tight text-xs text-slate-400">20 DEC
                                             2:20 AM</p>
                                     </div>
                                 </div>
@@ -1428,12 +1426,12 @@
                                     <span
                                         class="w-6.5 h-6.5 text-base absolute left-4 z-10 inline-flex -translate-x-1/2 items-center justify-center rounded-full bg-white text-center font-semibold">
                                         <i
-                                            class="relative z-10 leading-none text-transparent ni ni-key-25 leading-pro bg-gradient-to-tl from-purple-700 to-pink-500 bg-clip-text fill-transparent"></i>
+                                            class="relative z-10 text-transparent ni leading-none ni-key-25 leading-pro bg-gradient-to-tl from-purple-700 to-pink-500 bg-clip-text fill-transparent"></i>
                                     </span>
                                     <div class="ml-11.252 pt-1.4 lg:max-w-120 relative -top-1.5 w-auto">
-                                        <h6 class="mb-0 text-sm font-semibold leading-normal text-slate-700">Unlock
+                                        <h6 class="mb-0 font-semibold leading-normal text-sm text-slate-700">Unlock
                                             packages for development</h6>
-                                        <p class="mt-1 mb-0 text-xs font-semibold leading-tight text-slate-400">18 DEC
+                                        <p class="mt-1 mb-0 font-semibold leading-tight text-xs text-slate-400">18 DEC
                                             4:54 AM</p>
                                     </div>
                                 </div>
@@ -1441,12 +1439,12 @@
                                     <span
                                         class="w-6.5 h-6.5 text-base absolute left-4 z-10 inline-flex -translate-x-1/2 items-center justify-center rounded-full bg-white text-center font-semibold">
                                         <i
-                                            class="relative z-10 leading-none text-transparent ni ni-money-coins leading-pro bg-gradient-to-tl from-gray-900 to-slate-800 bg-clip-text fill-transparent"></i>
+                                            class="relative z-10 text-transparent ni leading-none ni-money-coins leading-pro bg-gradient-to-tl from-gray-900 to-slate-800 bg-clip-text fill-transparent"></i>
                                     </span>
                                     <div class="ml-11.252 pt-1.4 lg:max-w-120 relative -top-1.5 w-auto">
-                                        <h6 class="mb-0 text-sm font-semibold leading-normal text-slate-700">New order
+                                        <h6 class="mb-0 font-semibold leading-normal text-sm text-slate-700">New order
                                             #9583120</h6>
-                                        <p class="mt-1 mb-0 text-xs font-semibold leading-tight text-slate-400">17 DEC
+                                        <p class="mt-1 mb-0 font-semibold leading-tight text-xs text-slate-400">17 DEC
                                         </p>
                                     </div>
                                 </div>
@@ -1460,7 +1458,7 @@
                 <div class="w-full px-6 mx-auto">
                     <div class="flex flex-wrap items-center -mx-3 lg:justify-between">
                         <div class="w-full max-w-full px-3 mt-0 mb-6 shrink-0 lg:mb-0 lg:w-1/2 lg:flex-none">
-                            <div class="text-sm leading-normal text-center text-slate-500 lg:text-left">
+                            <div class="leading-normal text-center text-sm text-slate-500 lg:text-left">
                                 ©
                                 <script>
                                     document.write(new Date().getFullYear() + ",");
@@ -1475,22 +1473,22 @@
                             <ul class="flex flex-wrap justify-center pl-0 mb-0 list-none lg:justify-end">
                                 <li class="nav-item">
                                     <a href="https://www.creative-tim.com"
-                                        class="block px-4 pt-0 pb-1 text-sm font-normal transition-colors ease-soft-in-out text-slate-500"
+                                        class="block px-4 pt-0 pb-1 font-normal transition-colors ease-soft-in-out text-sm text-slate-500"
                                         target="_blank">Creative Tim</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="https://www.creative-tim.com/presentation"
-                                        class="block px-4 pt-0 pb-1 text-sm font-normal transition-colors ease-soft-in-out text-slate-500"
+                                        class="block px-4 pt-0 pb-1 font-normal transition-colors ease-soft-in-out text-sm text-slate-500"
                                         target="_blank">About Us</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="https://creative-tim.com/blog"
-                                        class="block px-4 pt-0 pb-1 text-sm font-normal transition-colors ease-soft-in-out text-slate-500"
+                                        class="block px-4 pt-0 pb-1 font-normal transition-colors ease-soft-in-out text-sm text-slate-500"
                                         target="_blank">Blog</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="https://www.creative-tim.com/license"
-                                        class="block px-4 pt-0 pb-1 pr-0 text-sm font-normal transition-colors ease-soft-in-out text-slate-500"
+                                        class="block px-4 pt-0 pb-1 pr-0 font-normal transition-colors ease-soft-in-out text-sm text-slate-500"
                                         target="_blank">License</a>
                                 </li>
                             </ul>
@@ -1516,7 +1514,7 @@
                 </div>
                 <div class="float-right mt-6">
                     <button fixed-plugin-close-button
-                        class="inline-block p-0 mb-4 text-xs font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer hover:scale-102 leading-pro ease-soft-in tracking-tight-soft bg-150 bg-x-25 active:opacity-85 text-slate-700">
+                        class="inline-block p-0 mb-4 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer hover:scale-102 leading-pro text-xs ease-soft-in tracking-tight-soft bg-150 bg-x-25 active:opacity-85 text-slate-700">
                         <i class="fa fa-close"></i>
                     </button>
                 </div>
@@ -1554,17 +1552,17 @@
                 <!-- Sidenav Type -->
                 <div class="mt-4">
                     <h6 class="mb-0">Sidenav Type</h6>
-                    <p class="text-sm leading-normal">Choose between 2 different sidenav types.</p>
+                    <p class="leading-normal text-sm">Choose between 2 different sidenav types.</p>
                 </div>
                 <div class="flex">
                     <button transparent-style-btn
-                        class="inline-block w-full px-4 py-3 mb-2 text-xs font-bold text-center text-white uppercase align-middle transition-all border border-transparent border-solid rounded-lg cursor-pointer xl-max:cursor-not-allowed xl-max:opacity-65 xl-max:pointer-events-none xl-max:bg-gradient-to-tl xl-max:from-purple-700 xl-max:to-pink-500 xl-max:text-white xl-max:border-0 hover:scale-102 hover:shadow-soft-xs active:opacity-85 leading-pro ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-to-tl from-purple-700 to-pink-500 bg-fuchsia-500 hover:border-fuchsia-500"
+                        class="inline-block w-full px-4 py-3 mb-2 font-bold text-center text-white uppercase align-middle transition-all border border-transparent border-solid rounded-lg cursor-pointer xl-max:cursor-not-allowed xl-max:opacity-65 xl-max:pointer-events-none xl-max:bg-gradient-to-tl xl-max:from-purple-700 xl-max:to-pink-500 xl-max:text-white xl-max:border-0 hover:scale-102 hover:shadow-soft-xs active:opacity-85 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-to-tl from-purple-700 to-pink-500 bg-fuchsia-500 hover:border-fuchsia-500"
                         data-class="bg-transparent" active-style>Transparent</button>
                     <button white-style-btn
-                        class="inline-block w-full px-4 py-3 mb-2 ml-2 text-xs font-bold text-center uppercase align-middle transition-all bg-transparent border border-solid rounded-lg cursor-pointer xl-max:cursor-not-allowed xl-max:opacity-65 xl-max:pointer-events-none xl-max:bg-gradient-to-tl xl-max:from-purple-700 xl-max:to-pink-500 xl-max:text-white xl-max:border-0 hover:scale-102 hover:shadow-soft-xs active:opacity-85 leading-pro ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 border-fuchsia-500 bg-none text-fuchsia-500 hover:border-fuchsia-500"
+                        class="inline-block w-full px-4 py-3 mb-2 ml-2 font-bold text-center uppercase align-middle transition-all bg-transparent border border-solid rounded-lg cursor-pointer xl-max:cursor-not-allowed xl-max:opacity-65 xl-max:pointer-events-none xl-max:bg-gradient-to-tl xl-max:from-purple-700 xl-max:to-pink-500 xl-max:text-white xl-max:border-0 hover:scale-102 hover:shadow-soft-xs active:opacity-85 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 border-fuchsia-500 bg-none text-fuchsia-500 hover:border-fuchsia-500"
                         data-class="bg-white">White</button>
                 </div>
-                <p class="block mt-2 text-sm leading-normal xl:hidden">You can change the sidenav type just on desktop
+                <p class="block mt-2 leading-normal text-sm xl:hidden">You can change the sidenav type just on desktop
                     view.</p>
                 <!-- Navbar Fixed -->
                 <div class="mt-4">
@@ -1576,10 +1574,10 @@
                         type="checkbox" />
                 </div>
                 <hr class="h-px bg-transparent bg-gradient-to-r from-transparent via-black/40 to-transparent sm:my-6" />
-                <a class="inline-block w-full px-6 py-3 mb-4 text-xs font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer leading-pro ease-soft-in hover:shadow-soft-xs hover:scale-102 active:opacity-85 tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-to-tl from-gray-900 to-slate-800"
+                <a class="inline-block w-full px-6 py-3 mb-4 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer leading-pro text-xs ease-soft-in hover:shadow-soft-xs hover:scale-102 active:opacity-85 tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-to-tl from-gray-900 to-slate-800"
                     href="https://www.creative-tim.com/product/soft-ui-dashboard-tailwind" target="_blank">Free
                     Download</a>
-                <a class="inline-block w-full px-6 py-3 mb-4 text-xs font-bold text-center uppercase align-middle transition-all bg-transparent border border-solid rounded-lg shadow-none cursor-pointer active:shadow-soft-xs hover:scale-102 active:opacity-85 leading-pro ease-soft-in tracking-tight-soft bg-150 bg-x-25 border-slate-700 text-slate-700 hover:bg-transparent hover:text-slate-700 hover:shadow-none active:bg-slate-700 active:text-white active:hover:bg-transparent active:hover:text-slate-700 active:hover:shadow-none"
+                <a class="inline-block w-full px-6 py-3 mb-4 font-bold text-center uppercase align-middle transition-all bg-transparent border border-solid rounded-lg shadow-none cursor-pointer active:shadow-soft-xs hover:scale-102 active:opacity-85 leading-pro text-xs ease-soft-in tracking-tight-soft bg-150 bg-x-25 border-slate-700 text-slate-700 hover:bg-transparent hover:text-slate-700 hover:shadow-none active:bg-slate-700 active:text-white active:hover:bg-transparent active:hover:text-slate-700 active:hover:shadow-none"
                     href="https://www.creative-tim.com/learning-lab/tailwind/html/quick-start/soft-ui-dashboard/"
                     target="_blank">View documentation</a>
                 <div class="w-full text-center">
@@ -1588,10 +1586,10 @@
                         aria-label="Star creativetimofficial/soft-ui-dashboard on GitHub">Star</a>
                     <h6 class="mt-4">Thank you for sharing!</h6>
                     <a href="https://twitter.com/intent/tweet?text=Check%20Soft%20UI%20Dashboard%20Tailwind%20made%20by%20%40CreativeTim&hashtags=webdesign,dashboard,tailwindcss&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fsoft-ui-dashboard-tailwind"
-                        class="inline-block px-6 py-3 mb-0 mr-2 text-xs font-bold text-center text-white uppercase align-middle transition-all border-0 rounded-lg cursor-pointer hover:shadow-soft-xs hover:scale-102 active:opacity-85 leading-pro ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 me-2 border-slate-700 bg-slate-700"
+                        class="inline-block px-6 py-3 mb-0 mr-2 font-bold text-center text-white uppercase align-middle transition-all border-0 rounded-lg cursor-pointer hover:shadow-soft-xs hover:scale-102 active:opacity-85 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 me-2 border-slate-700 bg-slate-700"
                         target="_blank"> <i class="mr-1 fab fa-twitter"></i> Tweet </a>
                     <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/soft-ui-dashboard-tailwind"
-                        class="inline-block px-6 py-3 mb-0 mr-2 text-xs font-bold text-center text-white uppercase align-middle transition-all border-0 rounded-lg cursor-pointer hover:shadow-soft-xs hover:scale-102 active:opacity-85 leading-pro ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 me-2 border-slate-700 bg-slate-700"
+                        class="inline-block px-6 py-3 mb-0 mr-2 font-bold text-center text-white uppercase align-middle transition-all border-0 rounded-lg cursor-pointer hover:shadow-soft-xs hover:scale-102 active:opacity-85 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 me-2 border-slate-700 bg-slate-700"
                         target="_blank"> <i class="mr-1 fab fa-facebook-square"></i> Share </a>
                 </div>
             </div>
@@ -1599,12 +1597,12 @@
     </div>
 </body>
 <!-- plugin for charts  -->
-<script src="<?= base_url() ?>/assets/js/plugins/chartjs.min.js" async></script>
+<script src="<?= base_url(); ?>/assets/js/plugins/chartjs.min.js" async></script>
 <!-- plugin for scrollbar  -->
-<script src="<?= base_url() ?>/assets/js/plugins/perfect-scrollbar.min.js" async></script>
+<script src="<?= base_url(); ?>/assets/js/plugins/perfect-scrollbar.min.js" async></script>
 <!-- github button -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <!-- main script file  -->
-<script src="<?= base_url() ?>/assets/js/soft-ui-dashboard-tailwind.js?v=1.0.5" async></script>
+<script src="<?= base_url(); ?>/assets/js/soft-ui-dashboard-tailwind.js?v=1.0.5" async></script>
 
 </html>

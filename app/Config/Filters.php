@@ -30,7 +30,13 @@ class Filters extends BaseConfig
     public array $globals = [
         'before' => [
             // 'honeypot',
-            'csrf',
+            'csrf' => [
+                'except' => [
+                    'apimasuk',
+                    'API/apiTransaksi',
+                    'API/apiPesanDetail',
+                ]
+            ],
             // 'invalidchars',
         ],
         'after' => [
@@ -60,5 +66,7 @@ class Filters extends BaseConfig
      * Example:
      * 'isLoggedIn' => ['before' => ['account/*', 'profiles/*']]
      */
-    public array $filters = [];
+    public array $filters = [
+
+    ];
 }

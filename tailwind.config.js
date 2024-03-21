@@ -3,7 +3,7 @@
 const plugin = require("tailwindcss/plugin");
 module.exports = {
   mode: "jit",
-  content: ["./app/**/*.{php,html,js}", "./assets/**/*.{php,html,js}"],
+  content: ["./app/**/*.{php,html,js}", "./public/assets/**/*.{php,html,js}"],
   presets: [],
   darkMode: "class",
   theme: {

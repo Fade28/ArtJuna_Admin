@@ -42,7 +42,7 @@
 <body class="m-0 font-sans antialiased font-normal bg-white text-start text-base leading-default text-slate-500">
     <main class="mt-0 transition-all duration-200 ease-soft-in-out">
         <section>
-            <div class="relative flex items-center p-0 overflow-hidden bg-center bg-cover min-h-75-screen">
+            <div class="relative flex items-center p-0 overflow-hidden bg-center bg-cover min-h-screen">
                 <div class="container z-10">
                     <div class="flex flex-wrap mt-0 -mx-3">
                         <div

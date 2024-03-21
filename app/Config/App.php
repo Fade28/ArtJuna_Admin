@@ -354,6 +354,7 @@ class App extends BaseConfig
      *
      * @deprecated Use `Config\Security` $tokenName property instead of using this property.
      */
+    public $CSRFProtection = true;
     public string $CSRFTokenName = 'csrf_test_name';
 
     /**

@@ -13,7 +13,7 @@ class TUser extends Model
     protected $returnType = 'array';
     protected $useSoftDeletes = true;
     protected $protectFields = true;
-    protected $allowedFields = ['Nama_Lengkap', 'Email', 'Nohp', 'Foto', 'Id_UserKey', 'dibuat', 'diubah', 'dihapus'];
+    protected $allowedFields = ['Nama_Lengkap', 'Email', 'Nohp', 'Alamat', 'Foto', 'Id_Userkey', 'dibuat', 'diubah', 'dihapus'];
 
 
     // Dates

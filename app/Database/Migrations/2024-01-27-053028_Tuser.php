@@ -26,6 +26,10 @@ class Tuser extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => '100',
             ],
+            'Alamat' => [
+                'type' => 'VARCHAR',
+                'constraint' => '100',
+            ],
             'Foto' => [
                 'type' => 'VARCHAR',
                 'constraint' => '100',

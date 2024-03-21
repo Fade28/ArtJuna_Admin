@@ -42,6 +42,7 @@ class Autoload extends AutoloadConfig
     public $psr4 = [
         APP_NAMESPACE => APPPATH, // For custom app namespace
         'Config' => APPPATH . 'Config',
+        'App\Validation\Rules' => APPPATH . 'Validation/Rules',
     ];
 
     /**
@@ -61,7 +62,9 @@ class Autoload extends AutoloadConfig
      *
      * @var array<string, string>
      */
-    public $classmap = [];
+    public $classmap = [
+        'App\Validation\Rules' => APPPATH . 'Validation/Rules',
+    ];
 
     /**
      * -------------------------------------------------------------------

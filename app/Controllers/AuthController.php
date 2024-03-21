@@ -45,6 +45,12 @@ class AuthController extends BaseController
     }
     public function index()
     {
+        if ($this->session->get('logged_in')) {
+            if ($this->session->get('status') == 1)
+                return redirect()->to('Admin');
+            else
+                return redirect()->to('Sanggar');
+        }
         return view('Auth_Page/masuk_v');
     }
 
@@ -62,12 +68,15 @@ class AuthController extends BaseController
             $verify_pass = password_verify($this->request->getVar('pass'), $pass);
             if ($verify_pass) {
                 $ses_data = [
-                    'name' => $data['Nama_Sanggar'],
-                    'email' => $data['Email_Sanggar'],
+                    'id' => $data['Id_Sanggar'],
+                    'status' => $key['Status'],
                     'logged_in' => TRUE
                 ];
                 $this->session->set($ses_data);
-                return redirect()->to('/');
+                if ($key['Status'] == 1)
+                    return redirect()->to('Admin');
+                else
+                    return redirect()->to('Sanggar');
             } else {
                 return redirect()->route('masuk')->with('gagal', 'Password yang anda masukkan Salah !');
             }
@@ -102,6 +111,12 @@ class AuthController extends BaseController
                 'Id_Userkey' => $userkey,
             ]
         );
+        return redirect()->route('masuk');
+    }
+
+    public function keluar()
+    {
+        $this->session->destroy();
         return redirect()->route('masuk');
     }
 }
