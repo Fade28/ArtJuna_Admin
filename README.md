@@ -20,9 +20,17 @@ Artjuna admin adalah website yang dibangun untuk digunakan admin Artjuna untuk m
 
 ## ScreenShoots
 
-| ![login](ss/Login.png) | ![Beranda](ss/Dashboard Admin Artjuna.png) | ![Screenshot 2](ss/CRUD Sanggar.png) | ![Screenshot 2](ss/CRUD Pengguna.png) | ![Screenshot 2](ss/Setting Admin.png) |
-|----------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|
-| Login                      | Tampilan Beranda Admin Artjuna                       | Halaman Sanggar                         | Halaman Pengguna                         | Halaman Setting Admin                         |
+### Admin Artjuna
+
+| ![login](ss/Login.png) | ![Beranda](ss/Dashboard%20Admin%20Artjuna.png) | ![Screenshot 2](ss/CRUD%20Sanggar.png) | ![Screenshot 2](ss/CRUD%20Pengguna.png) | ![Screenshot 2](ss/Setting%20Admin.png) |
+|------------------------|------------------------------------------------|----------------------------------------|-----------------------------------------|-----------------------------------------|
+| Login                  | Tampilan Beranda Admin Artjuna                 | Halaman Sanggar                        | Halaman Pengguna                        | Halaman Setting Admin                   |
+
+### Admin Sanggar
+
+| ![Beranda](ss/Profil%20Sanggar.png) | ![Screenshot 2](ss/CRUD%20Produk.png) | ![Screenshot 2](ss/CRUD%20Transaksi.png) | ![Screenshot 2](ss/Daftar%20Pesan.png) | ![Screenshot 2](ss/Pesan.png) | ![Screenshot 2](ss/Setting%20Sanggar.png) |
+|-------------------------------------|---------------------------------------|------------------------------------------|----------------------------------------|-------------------------------|-------------------------------------------|
+| Tampilan Beranda Profil Sanggar     | Halaman Produk                        | Halaman Transaksi                        | Halaman Daftar Pesan                   | Halaman Pesan                 | Halaman Setting Sanggar                   |
 
 
 ## Setup
