@@ -20,7 +20,30 @@ Artjuna admin adalah website yang dibangun untuk digunakan admin Artjuna untuk m
 
 ## ScreenShoots
 
-![Laman Login](ss/login.png)
+<div style="overflow-x: auto; white-space: nowrap;">
+  <img src="ss/Login.png" style="display: inline-block; width: 400px; height: auto;">
+  <img src="ss/Login.png" style="display: inline-block; width: 400px; height: auto;">
+  <img src="ss/Login.png" style="display: inline-block; width: 400px; height: auto;">
+  <img src="ss/Login.png" style="display: inline-block; width: 400px; height: auto;">  
+  <img src="ss/Login.png" style="display: inline-block; width: 400px; height: auto;">
+</div>
+<div style="overflow-x: auto; white-space: nowrap; display: flex;">
+  <img src="ss/Login.png" style="flex: 0 0 auto; width: 400px; height: auto; margin-right: 10px;">
+  <img src="ss/Login.png" style="flex: 0 0 auto; width: 400px; height: auto; margin-right: 10px;">
+  <img src="ss/Login.png" style="flex: 0 0 auto; width: 400px; height: auto; margin-right: 10px;">
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            window.open(img.src);
+        });
+    });
+});
+</script>
+
 
 ## Setup
 
