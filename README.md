@@ -19,12 +19,50 @@ Artjuna admin adalah website yang dibangun untuk digunakan admin Artjuna untuk m
 * Pesan
 
 ## ScreenShoots
-<div style="overflow-x: auto; white-space: nowrap;">
-  <div class="gallery">
-    <a target="_blank" href="img_lights.jpg">
-      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
+<div style="overflow-x: scroll; white-space: no-wrap;">
+  <div style="margin: 5px;border: 1px solid #ccc;float: left;width: 180px;">
+    <img src="ss/Login.png" alt="Northern Lights" width="250">
+    <div style="display: flex;justify-content: center;align-items: end;height: 98px;">Login</div>
+  </div>
+  <div style="margin: 5px;border: 1px solid #ccc;float: left;width: 180px;">
+    <img src="ss/Dashboard Admin Artjuna.png" alt="Northern Lights" width="250">
+    <div style="display: flex;justify-content: center;align-items: end;height: 61px;">Dashboard Admin Artjuna</div>
+  </div>
+  <div style="margin: 5px;border: 1px solid #ccc;float: left;width: 180px;">
+    <img src="ss/CRUD Sanggar.png" alt="Northern Lights" width="250">
+    <div style="display: flex;justify-content: center;align-items: end;height: 123px;">CRUD Sanggar</div>
+  </div>
+  <div style="margin: 5px;border: 1px solid #ccc;float: left;width: 180px;">
+    <img src="ss/CRUD Pengguna.png" alt="Northern Lights" width="250">
+    <div style="display: flex;justify-content: center;align-items: end;height: 82px;">CRUD Pengguna</div>
+  </div>
+  <div style="margin: 5px;border: 1px solid #ccc;float: left;width: 180px;">
+    <img src="ss/Setting Admin.png" alt="Northern Lights" width="250">
+    <div style="display: flex;justify-content: center;align-items: end;height: 121px;">Setting Admin</div>
+  </div>
+  <div style="margin: 5px;border: 1px solid #ccc;float: left;width: 180px;">
+    <img src="ss/Profil Sanggar.png" alt="Northern Lights" width="250">
+    <div style="display: flex;justify-content: center;align-items: end;height: 30px;">Profil Sanggar</div>
+  </div>
+  <div style="margin: 5px;border: 1px solid #ccc;float: left;width: 180px;">
+    <img src="ss/CRUD Produk.png" alt="Northern Lights" width="250">
+    <div style="display: flex;justify-content: center;align-items: end;height: 133px;">CRUD Produk</div>
+  </div>
+  <div style="margin: 5px;border: 1px solid #ccc;float: left;width: 180px;">
+    <img src="ss/CRUD Transaksi.png" alt="Northern Lights" width="250">
+    <div style="display: flex;justify-content: center;align-items: end;height: 119px;">CRUD Transaksi</div>
+  </div>
+  <div style="margin: 5px;border: 1px solid #ccc;float: left;width: 180px;">
+    <img src="ss/Daftar Pesan.png" alt="Northern Lights" width="250">
+    <div style="display: flex;justify-content: center;align-items: end;height: 76px;">Daftar Pesan</div>
+  </div>
+  <div style="margin: 5px;border: 1px solid #ccc;float: left;width: 180px;">
+    <img src="ss/Pesan.png" alt="Northern Lights" width="250">
+    <div style="display: flex;justify-content: center;align-items: end;height: 76px;">Pesan</div>
+  </div>
+  <div style="margin: 5px;border: 1px solid #ccc;float: left;width: 180px;">
+    <img src="ss/Setting Sanggar.png" alt="Northern Lights" width="250">
+    <div style="display: flex;justify-content: center;align-items: end;height: 20px;">Setting Sanggar</div>
   </div>
 </div>
 
