@@ -1,27 +1,26 @@
-# CodeIgniter 4 Application Starter
+# Artjuna Admin
 
-## What is CodeIgniter?
+## Apa itu Artjuna Admin
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+Artjuna admin adalah website yang dibangun untuk digunakan admin Artjuna untuk mengelola user dan admin dari sanggar untuk mengelola profil sanggar, produk transaksi dan berkomunikasi dengan pelanggannya.
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+### Fitur Admin Artjuna
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+* Mengelola User Sanggar
+* Mengelola User Pelanggan
+* Mengelola publish budaya
+* Setting Akun
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+### Fitur Admin Sanggar
 
-## Installation & updates
+* Mengelola Profil Sanggar
+* Mengelola Produk Sanggar
+* Mengelola Kontrak Pelanggan
+* Pesan
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+## ScreenShoots
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+![Laman Login](ss/login.png)
 
 ## Setup
 
