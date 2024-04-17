@@ -62,14 +62,15 @@ Artjuna admin adalah website yang dibangun untuk digunakan admin Artjuna untuk m
     # Perintah untuk Seeder
     php spark db:seed TestSeeder
     ```
-4. Jalankan
+4. Jalankan Server
    Untuk menjalankan anda bisa menggunakan perintah ini.
    ```PowerShell
     # Perintah untuk Seeder
     php spark serve
     ```
 6. Selesai
-   Jika semua sudah di konfigrasi dengan baik selnjutnya silahkan di rubah sesuai kebutuhan anda.
+
+   Jika semua sudah di konfigrasi dengan baik selanjutnya silahkan di rubah sesuai kebutuhan anda.
 
 ## Server Requirements
 
