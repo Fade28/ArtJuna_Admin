@@ -59,10 +59,16 @@ Artjuna admin adalah website yang dibangun untuk digunakan admin Artjuna untuk m
 3. Membuat Data Dummy
    Selanjutnya Membuat data awal agar sistem bisa berfungsi.
     ```PowerShell
-      # Perintah untuk Seeder
-      php spark db:seed TestSeeder
-      ```
-4. Selesai
+    # Perintah untuk Seeder
+    php spark db:seed TestSeeder
+    ```
+4. Jalankan
+   Untuk menjalankan anda bisa menggunakan perintah ini.
+   ```PowerShell
+    # Perintah untuk Seeder
+    php spark serve
+    ```
+6. Selesai
    Jika semua sudah di konfigrasi dengan baik selnjutnya silahkan di rubah sesuai kebutuhan anda.
 
 ## Server Requirements
