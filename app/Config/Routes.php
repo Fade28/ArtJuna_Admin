@@ -97,13 +97,14 @@ $routes->get('/daftar', 'AuthController::daftar');
 $routes->post('/tamsanggar', 'AuthController::tambahSanggar');
 
 //API
-$routes->post('apimasuk', 'API\apiLogin::apimasuk');
+$routes->post('apimasuk', 'API\ApiLogin::apimasuk');
 $routes->resource('API/apiProduk');
 $routes->resource('API/apiSanggar');
 $routes->resource('API/apiTransaksi');
 $routes->resource('API/apiPesan');
 $routes->resource('API/apiPesanDetail');
 $routes->resource('API/apiBudaya');
+$routes->resource('API/apiUser');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

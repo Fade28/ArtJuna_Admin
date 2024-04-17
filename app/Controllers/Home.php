@@ -146,7 +146,7 @@ class Home extends BaseController
             'jsanggar' => $this->jSanggar,
             'juser' => $this->juser,
             'jtrans' => $this->jtrans,
-            'dUser' => $this->TUser->join('Tuserkey', 'Tuser.Id_Userkey = Tuserkey.Id_Userkey')->orderBy('Tuser.dibuat', 'DESC')->findAll(5),
+            'dUser' => $this->TUser->join('tuserkey', 'tuser.Id_Userkey = tuserkey.Id_Userkey')->orderBy('tuser.dibuat', 'DESC')->findAll(5),
             'dSanggar' => $this->TSanggar->join('tuserkey', 'tsanggar.Id_Userkey = tuserkey.Id_Userkey')->orderBy('tsanggar.dibuat', 'DESC')->where('tsanggar.Id_Sanggar !=', '1')->findAll(5),
 
             'session' => $this->session,
@@ -162,12 +162,12 @@ class Home extends BaseController
         $this->data += [
             'aktif' => 'Sanggar',
             'judul' => 'Data Sanggar',
-            'table' => $this->TSanggar->join('Tuserkey', 'tsanggar.Id_Userkey = tuserkey.Id_Userkey')->where('tuserkey.Status !=', 1)->orderBy('tuserkey.Status', 'DESC')->paginate(8),
+            'table' => $this->TSanggar->join('tuserkey', 'tsanggar.Id_Userkey = tuserkey.Id_Userkey')->where('tuserkey.Status !=', 1)->orderBy('tuserkey.Status', 'DESC')->paginate(8),
             'pager' => $this->TSanggar->pager,
             'session' => $this->session,
         ];
         // dd($this->data['pager']->links());
-        return view('pages/Admin/sanggar_v', $this->data);
+        return view('Pages/Admin/sanggar_v', $this->data);
     }
     public function tambahSanggar()
     {
@@ -180,7 +180,7 @@ class Home extends BaseController
             'aksi' => 'tambah',
             'session' => $this->session,
         ];
-        return view('form/admin/sanggar_v', $this->data);
+        return view('Form/Admin/sanggar_v', $this->data);
     }
 
     public function simpanSanggar()
@@ -220,11 +220,11 @@ class Home extends BaseController
             'aktif' => 'Sanggar',
             'judul' => 'Ubah Data Sanggar',
             'aksi' => 'ubah',
-            'sanggar' => $this->TSanggar->join('Tuserkey', 'tsanggar.Id_Userkey = tuserkey.Id_Userkey')->find($id),
+            'sanggar' => $this->TSanggar->join('tuserkey', 'tsanggar.Id_Userkey = tuserkey.Id_Userkey')->find($id),
             'session' => $this->session,
         ];
         // dd($this->data['sanggar']);
-        return view('form/admin/sanggar_v', $this->data);
+        return view('Form/Admin/sanggar_v', $this->data);
     }
 
     public function simubahSanggar()
@@ -267,12 +267,12 @@ class Home extends BaseController
         $this->data += [
             'aktif' => 'Pengguna',
             'judul' => 'Data Pengguna',
-            'table' => $this->TUser->join('Tuserkey', 'tuser.Id_Userkey = tuserkey.Id_Userkey')->where('tuserkey.Status !=', 1)->orderBy('tuserkey.Status', 'DESC')->paginate(8),
+            'table' => $this->TUser->join('tuserkey', 'tuser.Id_Userkey = tuserkey.Id_Userkey')->where('tuserkey.Status !=', 1)->orderBy('tuserkey.Status', 'DESC')->paginate(8),
             'pager' => $this->TUser->pager,
             'session' => $this->session,
         ];
         // dd($this->data['table']);
-        return view('pages/Admin/pengguna_v', $this->data);
+        return view('Pages/Admin/pengguna_v', $this->data);
     }
     public function tambahPengguna()
     {
@@ -285,7 +285,7 @@ class Home extends BaseController
             'aksi' => 'tambah',
             'session' => $this->session,
         ];
-        return view('form/admin/pengguna_v', $this->data);
+        return view('Form/Admin/pengguna_v', $this->data);
     }
 
     public function simpanPengguna()
@@ -325,11 +325,11 @@ class Home extends BaseController
             'aktif' => 'Pengguna',
             'judul' => 'Ubah Data Pengguna',
             'aksi' => 'ubah',
-            'data' => $this->TUser->join('Tuserkey', 'tuser.Id_Userkey = tuserkey.Id_Userkey')->find($id),
+            'data' => $this->TUser->join('tuserkey', 'tuser.Id_Userkey = tuserkey.Id_Userkey')->find($id),
             'session' => $this->session,
         ];
         // dd($this->data['sanggar']);
-        return view('form/admin/pengguna_v', $this->data);
+        return view('Form/Admin/pengguna_v', $this->data);
     }
 
     public function simubahPengguna()
@@ -376,7 +376,7 @@ class Home extends BaseController
             'session' => $this->session,
         ];
         // dd($this->data['pager']->links());
-        return view('pages/Admin/transaksi_v', $this->data);
+        return view('Pages/Admin/transaksi_v', $this->data);
     }
     public function Budaya()
     {
@@ -391,7 +391,7 @@ class Home extends BaseController
             'session' => $this->session,
         ];
         // dd($this->data['pager']->links());
-        return view('pages/Admin/budaya_v', $this->data);
+        return view('Pages/Admin/budaya_v', $this->data);
     }
 
     public function tambahBudaya()
@@ -405,7 +405,7 @@ class Home extends BaseController
             'aksi' => 'tambah',
             'session' => $this->session,
         ];
-        return view('form/admin/budaya_v', $this->data);
+        return view('Form/Admin/budaya_v', $this->data);
     }
     public function ubahBudaya($id)
     {
@@ -420,7 +420,7 @@ class Home extends BaseController
             'session' => $this->session,
         ];
         // dd($this->data['sanggar']);
-        return view('form/admin/budaya_v', $this->data);
+        return view('Form/Admin/budaya_v', $this->data);
     }
 
     public function simpanBudaya()
@@ -458,7 +458,7 @@ class Home extends BaseController
             'aksi' => 'tambah',
             'session' => $this->session,
         ];
-        return view('form/admin/settings_v', $this->data);
+        return view('Form/Admin/settings_v', $this->data);
     }
     public function ubahFoto()
     {

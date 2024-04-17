@@ -1,0 +1,4 @@
+[21-Mar-2024 09:24:47 UTC] PHP Warning:  require(/home/artc6448/public_html/../app/Config/Paths.php): failed to open stream: No such file or directory in /home/artc6448/public_html/index.php on line 35
+[21-Mar-2024 09:24:47 UTC] PHP Fatal error:  require(): Failed opening required '/home/artc6448/public_html/../app/Config/Paths.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/artc6448/public_html/index.php on line 35
+[21-Mar-2024 09:28:48 UTC] PHP Warning:  require(/home/artc6448/public_html/../app/Config/Paths.php): failed to open stream: No such file or directory in /home/artc6448/public_html/index.php on line 35
+[21-Mar-2024 09:28:48 UTC] PHP Fatal error:  require(): Failed opening required '/home/artc6448/public_html/../app/Config/Paths.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/artc6448/public_html/index.php on line 35

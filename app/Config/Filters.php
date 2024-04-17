@@ -35,6 +35,7 @@ class Filters extends BaseConfig
                     'apimasuk',
                     'API/apiTransaksi',
                     'API/apiPesanDetail',
+                    'API/apiUser',
                 ]
             ],
             // 'invalidchars',

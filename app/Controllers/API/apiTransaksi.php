@@ -45,15 +45,25 @@ class apiTransaksi extends ResourceController
 
         ];
         $this->ttrans->insert($data);
-        $this->tpg->insert([
-            'Id_Pihak1' => $this->request->getVar('Id_user'),
-            'Id_Pihak2' => $this->request->getVar('Id_san'),
-        ]);
-        $this->tp->insert([
-            'Id_PesanGrup' => $this->tpg->getInsertID(),
-            'Pengirim' => $this->request->getVar('Id_san'),
-            'Pesan' => 'Terima Kasih sudah berTransaksi Bersama Kami'
-        ]);
+        $tpg = $this->tpg->where('Id_Pihak1', $this->request->getVar('Id_user'))->where('Id_Pihak2', $this->request->getVar('Id_san'))->findAll(1);
+        if($tpg){
+          $this->tp->insert([
+                'Id_PesanGrup' => $tpg[0]['Id_PesanGrup'],
+                'Pengirim' => $this->request->getVar('Id_san'),
+                'Pesan' => 'Terima Kasih sudah berTransaksi Bersama Kami'
+            ]);
+        }
+        else{
+            $this->tpg->insert([
+                'Id_Pihak1' => $this->request->getVar('Id_user'),
+                'Id_Pihak2' => $this->request->getVar('Id_san'),
+            ]);
+            $this->tp->insert([
+                'Id_PesanGrup' => $this->tpg->getInsertID(),
+                'Pengirim' => $this->request->getVar('Id_san'),
+                'Pesan' => 'Terima Kasih sudah berTransaksi Bersama Kami. Anda juga dapat membeli barang yang kami sediakan dengan mengkonfirmasi kepada Admin'
+            ]);
+        }
         $response = [
             'status' => 'sukses',
             'messages' => [

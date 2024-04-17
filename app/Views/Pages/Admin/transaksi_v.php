@@ -1,4 +1,4 @@
-<?= $this->extend('pages/Admin/bungkus') ?>
+<?= $this->extend('Pages/Admin/bungkus') ?>
 <?= $this->section('content') ?>
 <!-- cards -->
 <div class="w-full px-6 py-6 mx-auto">

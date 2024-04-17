@@ -1,4 +1,4 @@
-<?= $this->extend('pages/Sanggar/bungkus') ?>
+<?= $this->extend('Pages/Sanggar/bungkus') ?>
 <?= $this->section('content') ?>
 <!-- cards -->
 <div class="w-full max-w-full h-[512px] px-3 flex flex-col justify-between">

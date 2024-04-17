@@ -25,8 +25,14 @@ class AuthController extends BaseController
             'errors' => ['required' => 'Nama Harus Diisi']
         ],
         'email' => [
-            'rules' => 'required',
-            'errors' => ['required' => 'Email Harus Diisi']
+            'rules' => [
+                'required',
+                "is_unique[tsanggar.Email_Sanggar,Id_Sanggar,{id}]",
+            ],
+            'errors' => [
+                'required' => 'Email Harus Diisi',
+                'is_unique' => 'Email sudah Terdaftar !',
+            ]
         ],
         'pass' => [
             'rules' => 'required',
@@ -108,6 +114,7 @@ class AuthController extends BaseController
             [
                 'Nama_Sanggar' => $this->request->getVar('nama'),
                 'Email_Sanggar' => $this->request->getVar('email'),
+                'Foto_Sanggar' => 'favicon.png',
                 'Id_Userkey' => $userkey,
             ]
         );

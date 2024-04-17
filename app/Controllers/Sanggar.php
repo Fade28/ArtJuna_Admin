@@ -128,7 +128,7 @@ class Sanggar extends BaseController
             'aktif' => 'home',
             'judul' => 'ArtJuna',
             'session' => $this->session,
-            'produk' => $this->TProduk->findAll(),
+            'produk' => $this->TProduk->where('Id_Sanggar',$this->session->get('id'))->findAll(),
             'pesan' => $this->TPesanGrup
                 ->select('Id_PesanGrup, tuser.Foto as foto, tuser.Nama_Lengkap as nama, (
                     select pesan from tpesan where tpesan.Id_PesanGrup = tpesangrup.Id_PesanGrup ORDER BY dibuat DESC limit 1) as pesan')
@@ -137,7 +137,7 @@ class Sanggar extends BaseController
                 ->findAll()
         ];
         // dd($data['profil']);
-        return view('pages/sanggar/home_v', $this->data);
+        return view('Pages/Sanggar/home_v', $this->data);
     }
     public function Produk()
     {
@@ -147,12 +147,12 @@ class Sanggar extends BaseController
         $this->data += [
             'aktif' => 'Produk',
             'judul' => 'Data Produk',
-            'table' => $this->TProduk->paginate(8),
+            'table' => $this->TProduk->where('Id_Sanggar',$this->session->get('id'))->paginate(8),
             'pager' => $this->TProduk->pager,
             'session' => $this->session,
         ];
         // dd($this->data['pager']->links());
-        return view('pages/Sanggar/produk_v', $this->data);
+        return view('Pages/Sanggar/produk_v', $this->data);
     }
 
     public function tambahProduk()
@@ -166,7 +166,7 @@ class Sanggar extends BaseController
             'aksi' => 'tambah',
             'session' => $this->session,
         ];
-        return view('form/sanggar/produk_v', $this->data);
+        return view('Form/Sanggar/produk_v', $this->data);
     }
 
     public function simpanProduk()
@@ -203,7 +203,7 @@ class Sanggar extends BaseController
             'session' => $this->session,
         ];
         // dd($this->data['data']);
-        return view('form/sanggar/produk_v', $this->data);
+        return view('Form/Sanggar/produk_v', $this->data);
     }
 
     public function hapusProduk()
@@ -225,7 +225,7 @@ class Sanggar extends BaseController
             'session' => $this->session,
         ];
         // dd($this->data['table']);
-        return view('pages/Sanggar/transaksi_v', $this->data);
+        return view('Pages/Sanggar/transaksi_v', $this->data);
     }
 
 
@@ -261,7 +261,7 @@ class Sanggar extends BaseController
             'session' => $this->session,
         ];
         // dd($this->data['data']);
-        return view('form/sanggar/transaksi_v', $this->data);
+        return view('Form/Sanggar/transaksi_v', $this->data);
     }
 
     public function hapusTransaksi()
@@ -287,7 +287,7 @@ class Sanggar extends BaseController
                 ->findAll()
         ];
         // dd($this->data['table']);
-        return view('pages/Sanggar/pesan_v', $this->data);
+        return view('Pages/Sanggar/pesan_v', $this->data);
     }
 
     public function detailPesan($id)
@@ -306,7 +306,7 @@ class Sanggar extends BaseController
             'session' => $this->session,
         ];
         // dd($this->data['pesan']);
-        return view('pages/sanggar/detailpesan_v', $this->data);
+        return view('Pages/Sanggar/detailpesan_v', $this->data);
     }
     public function kirimPesan()
     {
@@ -336,7 +336,7 @@ class Sanggar extends BaseController
             'aksi' => 'tambah',
             'session' => $this->session,
         ];
-        return view('form/sanggar/settings_v', $this->data);
+        return view('Form/Sanggar/settings_v', $this->data);
     }
     public function ubahFoto()
     {
