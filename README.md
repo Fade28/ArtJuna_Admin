@@ -32,11 +32,32 @@ Artjuna admin adalah website yang dibangun untuk digunakan admin Artjuna untuk m
 |-------------------------------------|---------------------------------------|------------------------------------------|----------------------------------------|-------------------------------|-------------------------------------------|
 | Tampilan Beranda Profil Sanggar     | Halaman Produk                        | Halaman Transaksi                        | Halaman Daftar Pesan                   | Halaman Pesan                 | Halaman Setting Sanggar                   |
 
+## Technology
+
+* Programming Leanguage
+  * PHP
+  * HTML
+  * JavaScript
+  * CSS
+
+* Framework
+  * Codeignitier
+  * TailwindCss
+  * AlpineJS
 
 ## Setup
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+1. Configure .env
+    Pertama configure env terlebih dahulu dari baseURL dan Database yang kamu gunakan.
+  
+2. Migration
+    Selanjutnya migrasikan database buat semua table dan data dummy yang di perlukan. kamu bisa menggunakan perintah ini :
+    <pre>
+      ```PowerShell
+      # Perintah untuk Migration
+      php spark migrate
+      ```
+    </pre>
 
 ## Important Change with index.php
 
