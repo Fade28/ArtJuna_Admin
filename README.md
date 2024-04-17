@@ -48,40 +48,26 @@ Artjuna admin adalah website yang dibangun untuk digunakan admin Artjuna untuk m
 ## Setup
 
 1. Configure .env
-    Pertama configure env terlebih dahulu dari baseURL dan Database yang kamu gunakan.
+   Pertama configure env terlebih dahulu dari baseURL dan Database yang kamu gunakan.
   
 2. Migration
-    Selanjutnya migrasikan database buat semua table dan data dummy yang di perlukan. kamu bisa menggunakan perintah ini :
-    <pre>
+   Selanjutnya migrasikan database buat semua table dan data dummy yang di perlukan. kamu bisa menggunakan perintah ini :
       ```PowerShell
       # Perintah untuk Migration
       php spark migrate
       ```
-    </pre>
-
-## Important Change with index.php
-
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
-
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+3. Membuat Data Dummy
+   Selanjutnya Membuat data awal agar sistem bisa berfungsi.
+    ```PowerShell
+      # Perintah untuk Seeder
+      php spark db:seed TestSeeder
+      ```
+4. Selesai
+   Jika semua sudah di konfigrasi dengan baik selnjutnya silahkan di rubah sesuai kebutuhan anda.
 
 ## Server Requirements
 
-PHP version 7.4 or higher is required, with the following extensions installed:
+PHP version 8.1 or higher is required, with the following extensions installed:
 
 - [intl](http://php.net/manual/en/intl.requirements.php)
 - [mbstring](http://php.net/manual/en/mbstring.installation.php)
@@ -91,3 +77,29 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - json (enabled by default - don't turn it off)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
 - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+
+## Contribution
+
+Jika Anda ingin berkontribusi pada proyek ini, harap ikuti langkah-langkah di bawah ini:
+
+1. Silakan fork repositori ini dan buat branch baru untuk fitur atau perbaikan yang Anda rencanakan.
+2. Lakukan perubahan yang diperlukan.
+3. Kirimkan pull request ke branch utama kami untuk ditinjau.
+4. Pastikan kode Anda memenuhi pedoman kode kami.
+
+## Lisensi
+
+- Copyright © 2024 Fade28.
+- **Sistem Informasi Akademik Sekolah is open-sourced software licensed under the [MIT license](LICENSE).**
+
+## Created By
+
+Proyek ini saya bangun berdua bersama partner saya dan di publish sebagai bentuk portofolio yang dapat di pertanggung jawabkan.
+ 1. Ahmad Fatih Fadhlillah
+ 2. Revan Arjuna Menda
+
+## Contact
+
+Jika anda tertarik diskusi lebih lanjut atau membangun kerjasama terkait dengan saya dapat menghubungi link dibawah ini :
+- Facebook : <a href="https://www.facebook.com/fatihbro/">Ahmad Fati Fadhlillah</a>
+- LinkedIn : <a href="https://www.linkedin.com/in/fatih-fadhlillah-876654241">Fade 28</a>
