@@ -22,7 +22,7 @@ Artjuna admin adalah website yang dibangun untuk digunakan admin Artjuna untuk m
 <div style="overflow-x: scroll; white-space: no-wrap;">
   <div style="margin: 5px;border: 1px solid #ccc;float: left;width: 180px;">
     <img src="ss/Login.png" alt="Northern Lights" width="250">
-    <div style="display: flex;justify-content: center;align-items: end;height: 98px;">Login</div>
+    <div style="display: flex;text-align: center;justify-content: center;align-items: end;height: 98px;">Login</div>
   </div>
   <div style="margin: 5px;border: 1px solid #ccc;float: left;width: 180px;">
     <img src="ss/Dashboard Admin Artjuna.png" alt="Northern Lights" width="250">
